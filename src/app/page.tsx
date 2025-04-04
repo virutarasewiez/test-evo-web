@@ -1,12 +1,12 @@
 import Carrusel from "@/components/carrusel";
-import Oficinavirtual from "@/components/oficinavirtual";
 import Asesoramiento from "@/components/asesoramiento";
+import Seguros from "@/components/seguros";
 
 export default function Home() {
   return (
     <>
       <Carrusel />
-      <Oficinavirtual />
+      <Seguros />
       <Asesoramiento />
     </>
   );
