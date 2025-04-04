@@ -7,8 +7,8 @@ export default function Asesoramiento() {
           Nuestros expertos están listos para ayudarte a encontrar la mejor solución para tus necesidades.
         </p>
         <div className="flex justify-center gap-4">
-          <a className="bg-red-600 text-white text-lg px-6 py-3 rounded-lg hover:bg-red-700 transition" href="#">Contáctanos</a>
-          <a className="bg-red-600 text-white text-lg px-6 py-3 rounded-lg hover:bg-red-700 transition" href="#">Oficina Virtual</a>
+          <a className="bg-red-600 text-white text-lg px-6 py-3 rounded-lg hover:bg-red-700 transition" href="contacto">Contáctanos</a>
+          <a className="bg-red-600 text-white text-lg px-6 py-3 rounded-lg hover:bg-red-700 transition" href="oficinavirtual">Oficina Virtual</a>
         </div>
       </div>
     </section>
