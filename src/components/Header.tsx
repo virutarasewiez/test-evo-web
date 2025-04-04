@@ -2,10 +2,30 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  // Cerrar el menú cuando se hace clic fuera de él
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setIsMenuOpen(false);
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
+  // Cerrar el menú cuando se navega a una nueva página
+  const handleNavigation = () => {
+    setIsMenuOpen(false);
+  };
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
@@ -29,11 +49,12 @@ export default function Header() {
           </Link>
 
           {/* Dropdown */}
-          <div className="relative">
+          <div className="relative" ref={menuRef}>
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="focus:outline-none"
               aria-expanded={isMenuOpen}
+              aria-label="Abrir menú"
             >
               <svg
                 width="24"
@@ -72,6 +93,7 @@ export default function Header() {
                     <Link
                       href={href}
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex items-center"
+                      onClick={handleNavigation}
                     >
                       <i className={`bi ${icon} mr-2`}></i> {label}
                     </Link>
