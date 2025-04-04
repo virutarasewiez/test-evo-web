@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "@/app/globals.css";
 import Header from "@/components/Header";
+import Oficinavirtual from "@/components/oficinavirtual";
+import Carrusel from "@/components/carrusel";
 import Footer from "@/components/Footer";
-
+import Asesoramiento from "@/components/asesoramiento";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -18,16 +20,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <head>
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-        />
-      </head>
       <body className={inter.className}>
-        <Header />
-        <main className="min-h-screen">{children}</main>
-        <Footer />
+
+        <main className="min-h-screen">
+
+          <Oficinavirtual />
+          <Asesoramiento />
+        </main>
+
       </body>
     </html>
   );
