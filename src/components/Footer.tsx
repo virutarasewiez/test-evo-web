@@ -4,13 +4,13 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-200 py-10 text-sm">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 text-center">
           {/* Logo y Redes Sociales */}
-          <div>
+          <div className="flex flex-col items-center">
             <Image
-              src="/assets/images/logo.png"
+              src="/assets/images/LOGO-evolucionseguros-grupo.png"
               alt="Company Logo"
-              width={150}
+              width={350}
               height={40}
               className="mb-4"
               style={{ maxHeight: '60px' }}
@@ -35,7 +35,7 @@ export default function Footer() {
           </div>
 
           {/* Contacto */}
-          <div>
+          <div className="flex flex-col items-start">
             <h5 className="mb-4 font-semibold text-lg">Contacto</h5>
             <ul className="space-y-2">
               <li className="flex items-center gap-2">
@@ -67,8 +67,7 @@ export default function Footer() {
           </div>
 
           {/* Datos Fiscales */}
-          <div className="text-center lg:text-right">
-
+          <div className="flex flex-col items-center">
             <a
               href="http://qr.afip.gob.ar/?qr=kGL3OdV1P-iE6IVsQQXWPw,,"
               target="_blank"
