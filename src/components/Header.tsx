@@ -60,8 +60,8 @@ export default function Header() {
               <ul className="absolute right-0 mt-2 w-56 bg-white border border-gray-200 rounded-md shadow-lg z-50">
                 {[
                   { href: '/', label: 'Inicio', icon: 'bi-house-door' },
-                  { href: '/institucional', label: 'Nosotros', icon: 'bi-info-circle' },
-                  { href: '/contacto', label: 'Seguros', icon: 'bi-shield-check' },
+                  { href: '/nosotros', label: 'Nosotros', icon: 'bi-info-circle' },
+                  { href: '/seguros', label: 'Seguros', icon: 'bi-shield-check' },
                   { href: '/convenio-uom', label: 'Convenio UOM', icon: 'bi-check-circle' },
                   { href: '/productores', label: 'Productores', icon: 'bi-person' },
                   { href: '/siniestros', label: 'Siniestros', icon: 'bi-x-circle' },
