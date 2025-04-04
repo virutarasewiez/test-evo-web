@@ -38,7 +38,7 @@ export default function Carrusel() {
     return () => clearInterval(interval);
   }, [slides.length]);
 
-  const goToSlide = (index) => setCurrent(index);
+  const goToSlide = (index: number) => setCurrent(index);
   const prevSlide = () => setCurrent((current - 1 + slides.length) % slides.length);
   const nextSlide = () => setCurrent((current + 1) % slides.length);
 
