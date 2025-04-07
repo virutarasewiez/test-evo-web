@@ -16,7 +16,7 @@ export default function CobrosPage() {
     }
 
     try {
-      const parsedData = JSON.parse(storedData);
+      JSON.parse(storedData);
     } catch (err) {
       console.error('Error al parsear los datos del usuario:', err);
       router.push('/login');

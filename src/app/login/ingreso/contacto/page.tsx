@@ -4,13 +4,6 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Sidebar from '../../components/Sidebar';
 
-interface UserData {
-  Nombre: string | null;
-  Apellido: string;
-  Mail: string;
-  session_token: string;
-}
-
 export default function ContactoPage() {
   const router = useRouter();
   const [loading, setLoading] = useState(true);
@@ -23,7 +16,7 @@ export default function ContactoPage() {
     }
 
     try {
-      const parsedData = JSON.parse(storedData);
+      JSON.parse(storedData);
     } catch (err) {
       console.error('Error al parsear los datos del usuario:', err);
       router.push('/login');

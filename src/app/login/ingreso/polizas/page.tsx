@@ -91,8 +91,19 @@ export default function PolizasPage() {
 
   const getSortedPolizas = (polizas: Poliza[]) => {
     return [...polizas].sort((a, b) => {
-      const getNestedValue = (obj: any, path: string): any => {
-        return path.split('.').reduce((acc, part) => acc && acc[part], obj);
+      const getNestedValue = (obj: Poliza, path: string): string | number | null => {
+        const parts = path.split('.');
+        let result: unknown = obj;
+        
+        for (const part of parts) {
+          if (result && typeof result === 'object') {
+            result = (result as Record<string, unknown>)[part];
+          } else {
+            return null;
+          }
+        }
+        
+        return result as string | number | null;
       };
 
       const valueA = getNestedValue(a, sortField);
