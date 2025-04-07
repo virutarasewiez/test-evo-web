@@ -103,7 +103,7 @@ export default function Sidebar({ onToggle }: SidebarProps) {
       <div className="absolute bottom-0 left-0 right-0 p-4">
         <button
           onClick={handleLogout}
-          className="w-full flex items-center justify-center space-x-3 px-4 py-2 text-[#9A2329] bg-red-50 hover:bg-[#9A2329] hover:text-white rounded-lg transition-colors"
+          className="w-full flex items-center justify-center space-x-3 px-4 py-2 text-[#9A2329] bg-red-50 rounded-lg hover:bg-gray-200 transition-colors"
         >
           <svg
             className="w-5 h-5"
