@@ -1,5 +1,14 @@
 import Link from 'next/link';
 
+// Función para normalizar texto (quitar acentos y caracteres especiales)
+const normalizeText = (text: string) => {
+  return text
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/\s+/g, '-');
+};
+
 const seguros = [
   {
     id: 1,
@@ -68,7 +77,7 @@ export default function Seguros() {
               </div>
               <div className="mt-6 text-center">
                 <Link
-                  href={`/seguros/productos/${seguro.title.toLowerCase().replace(/\s+/g, '-')}`}
+                  href={`/seguros/productos/${normalizeText(seguro.title)}`}
                   className="inline-block bg-primary text-white px-5 py-2 rounded-lg hover:bg-primary-hover transition"
                 >
                   Más información
