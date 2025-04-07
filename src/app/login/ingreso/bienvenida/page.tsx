@@ -15,6 +15,7 @@ export default function BienvenidaPage() {
   const router = useRouter();
   const [userData, setUserData] = useState<UserData | null>(null);
   const [loading, setLoading] = useState(true);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
   useEffect(() => {
     const storedData = localStorage.getItem('userData');
@@ -37,8 +38,8 @@ export default function BienvenidaPage() {
   if (loading) {
     return (
       <div className="flex">
-        <Sidebar />
-        <div className="flex-1 ml-64 min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center">
+        <Sidebar onToggle={setIsSidebarOpen} />
+        <div className={`flex-1 min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center transition-all duration-300 ${isSidebarOpen ? 'ml-64' : 'ml-20'}`}>
           <div className="flex items-center space-x-4">
             <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-500"></div>
             <span className="text-lg text-gray-600">Cargando...</span>
@@ -50,8 +51,8 @@ export default function BienvenidaPage() {
 
   return (
     <div className="flex">
-      <Sidebar />
-      <div className="flex-1 ml-64 min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 p-8">
+      <Sidebar onToggle={setIsSidebarOpen} />
+      <main className={`flex-1 min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 transition-all duration-300 ${isSidebarOpen ? 'ml-64' : 'ml-20'}`}>
         <div className="max-w-4xl mx-auto">
           <div className="bg-white rounded-xl shadow-lg p-8">
             <div className="text-center">
@@ -96,7 +97,7 @@ export default function BienvenidaPage() {
             </div>
           </div>
         </div>
-      </div>
+      </main>
     </div>
   );
 } 

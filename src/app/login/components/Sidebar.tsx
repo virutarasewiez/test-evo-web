@@ -43,7 +43,7 @@ export default function Sidebar() {
       {/* Toggle Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="absolute -right-3 top-6 bg-white rounded-full p-1.5 shadow-md hover:bg-gray-100"
+        className="absolute -right-3 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-1.5 shadow-md hover:bg-gray-100"
       >
         <svg
           className={`w-4 h-4 text-gray-600 transition-transform ${isOpen ? 'rotate-180' : ''}`}
@@ -56,7 +56,7 @@ export default function Sidebar() {
       </button>
 
       {/* User Profile Section */}
-      <div className="p-4 border-b">
+      <div className="p-4 border-b mt-16">
         <div className="flex items-center space-x-4">
           <div className="relative w-12 h-12 rounded-full overflow-hidden bg-gray-200">
             <Image
