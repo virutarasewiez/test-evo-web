@@ -47,7 +47,7 @@ export default function LoginPage() {
       localStorage.setItem('userData', JSON.stringify(response.payload));
       // Redirigir al usuario a la página de ingreso
       router.push('/login/ingreso');
-    } catch (error) {
+    } catch (err) {
       setError("Error al iniciar sesión. Por favor, verifica tus credenciales.");
     } finally {
       setLoading(false);
