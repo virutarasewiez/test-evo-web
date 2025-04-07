@@ -40,12 +40,12 @@ export default function Sidebar({ onToggle }: SidebarProps) {
   };
 
   const menuItems = [
-    { name: 'Inicio', path: '/login/ingreso/bienvenida', icon: '🏠' },
-    { name: 'Ofertas', path: '/login/ingreso/ofertas', icon: '📋' },
-    { name: 'Pólizas', path: '/login/ingreso/polizas', icon: '📄' },
-    { name: 'Cobros', path: '/login/ingreso/cobros', icon: '💰' },
-    { name: 'Contacto', path: '/login/ingreso/contacto', icon: '📞' },
-    { name: 'Chat', path: '/login/ingreso/chat', icon: '💬' },
+    { name: 'Inicio', path: '/login/ingreso/bienvenida', icon: 'bi-house-door' },
+    { name: 'Ofertas', path: '/login/ingreso/ofertas', icon: 'bi-file-text' },
+    { name: 'Pólizas', path: '/login/ingreso/polizas', icon: 'bi-file-earmark-text' },
+    { name: 'Cobros', path: '/login/ingreso/cobros', icon: 'bi-cash' },
+    { name: 'Contacto', path: '/login/ingreso/contacto', icon: 'bi-telephone' },
+    { name: 'Chat', path: '/login/ingreso/chat', icon: 'bi-chat-dots' },
   ];
 
   return (
@@ -96,8 +96,8 @@ export default function Sidebar({ onToggle }: SidebarProps) {
                 href={item.path}
                 className="flex items-center space-x-3 px-4 py-2 text-gray-700 rounded-lg hover:bg-gray-100 transition-colors"
               >
-                <span className="text-xl">{item.icon}</span>
-                {isOpen && <span>{item.name}</span>}
+                <i className={`bi ${item.icon} text-xl text-[#9A2329]`}></i>
+                {isOpen && <span className="text-[#9A2329]">{item.name}</span>}
               </Link>
             </li>
           ))}
