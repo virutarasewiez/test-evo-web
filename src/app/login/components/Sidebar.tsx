@@ -41,6 +41,7 @@ export default function Sidebar({ onToggle }: SidebarProps) {
   const menuItems = [
     { name: 'Inicio', path: '/login/ingreso/bienvenida', icon: 'bi-house-door' },
     { name: 'Ofertas', path: '/login/ingreso/ofertas', icon: 'bi-file-text' },
+    { name: 'Siniestros', path: '/login/ingreso/siniestros', icon: 'bi-file-text' },
     { name: 'Pólizas', path: '/login/ingreso/polizas', icon: 'bi-file-earmark-text' },
     { name: 'Cobros', path: '/login/ingreso/cobros', icon: 'bi-cash' },
     { name: 'Contacto', path: '/login/ingreso/contacto', icon: 'bi-telephone' },
