@@ -34,9 +34,9 @@ export default function ContactoPage() {
     return (
       <div className="flex h-screen">
         <Sidebar onToggle={handleSidebarToggle} />
-        <div className={`flex-1 ${sidebarOpen ? 'ml-64' : 'ml-20'} transition-all duration-300 min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center`}>
+        <div className={`flex-1 ${sidebarOpen ? 'ml-64' : 'ml-20'} transition-all duration-300 min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center pt-16`}>
           <div className="flex items-center space-x-4">
-            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-500"></div>
+            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#9A2329]"></div>
             <span className="text-lg text-gray-600">Cargando...</span>
           </div>
         </div>
@@ -47,37 +47,37 @@ export default function ContactoPage() {
   return (
     <div className="flex h-screen">
       <Sidebar onToggle={handleSidebarToggle} />
-      <div className={`flex-1 ${sidebarOpen ? 'ml-64' : 'ml-20'} transition-all duration-300 min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center`}>
+      <div className={`flex-1 ${sidebarOpen ? 'ml-64' : 'ml-20'} transition-all duration-300 min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center pt-16`}>
         <div className="max-w-4xl w-full mx-auto px-4">
           <div className="bg-white rounded-xl shadow-lg p-8">
-            <h1 className="text-3xl font-bold text-gray-900 mb-6">Contacto</h1>
+            <h1 className="text-3xl font-bold text-[#9A2329] mb-6">Contacto</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-blue-50 rounded-lg p-6">
-                <h2 className="text-xl font-semibold text-blue-900 mb-4">Información de Contacto</h2>
+              <div className="bg-gray-50 rounded-lg p-6 border border-gray-100">
+                <h2 className="text-xl font-semibold text-[#9A2329] mb-4">Información de Contacto</h2>
                 <div className="space-y-3">
-                  <p className="flex items-center text-blue-700">
-                    <span className="mr-2">📞</span>
+                  <p className="flex items-center text-gray-700">
+                    <i className="bi bi-telephone text-xl mr-3 text-[#9A2329]"></i>
                     Teléfono: 54 11 5278-3600
                   </p>
-                  <p className="flex items-center text-blue-700">
-                    <span className="mr-2">📱</span>
+                  <p className="flex items-center text-gray-700">
+                    <i className="bi bi-phone text-xl mr-3 text-[#9A2329]"></i>
                     Móvil: 54 911 2658 9562
                   </p>
-                  <p className="flex items-center text-blue-700">
-                    <span className="mr-2">📧</span>
+                  <p className="flex items-center text-gray-700">
+                    <i className="bi bi-envelope text-xl mr-3 text-[#9A2329]"></i>
                     Email: evolucion@evolucionseguros.com.ar
                   </p>
-                  <p className="flex items-center text-blue-700">
-                    <span className="mr-2">🏢</span>
+                  <p className="flex items-center text-gray-700">
+                    <i className="bi bi-building text-xl mr-3 text-[#9A2329]"></i>
                     Azopardo 1405 – Piso 8 (C1107ADY), CABA Argentina
                   </p>
                 </div>
               </div>
-              <div className="bg-green-50 rounded-lg p-6">
-                <h2 className="text-xl font-semibold text-green-900 mb-4">Horarios de Atención</h2>
+              <div className="bg-gray-50 rounded-lg p-6 border border-gray-100">
+                <h2 className="text-xl font-semibold text-[#9A2329] mb-4">Horarios de Atención</h2>
                 <div className="space-y-3">
-                  <p className="flex items-center text-green-700">
-                    <span className="mr-2">🕒</span>
+                  <p className="flex items-center text-gray-700">
+                    <i className="bi bi-clock text-xl mr-3 text-[#9A2329]"></i>
                     Lunes a Viernes: 9:00 - 17:00
                   </p>
                 </div>
