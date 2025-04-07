@@ -30,6 +30,7 @@ export default function Sidebar() {
   };
 
   const menuItems = [
+    { name: 'Inicio', path: '/login/ingreso/bienvenida', icon: '🏠' },
     { name: 'Ofertas', path: '/login/ingreso/ofertas', icon: '📋' },
     { name: 'Pólizas', path: '/login/ingreso/polizas', icon: '📄' },
     { name: 'Cobros', path: '/login/ingreso/cobros', icon: '💰' },
