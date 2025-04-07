@@ -68,13 +68,8 @@ export default function Sidebar({ onToggle }: SidebarProps) {
       {/* User Profile Section */}
       <div className="p-4 border-b mt-16">
         <div className="flex items-center space-x-4">
-          <div className="relative w-12 h-12 rounded-full overflow-hidden bg-gray-200">
-            <Image
-              src="/assets/images/default-avatar.png"
-              alt="Avatar"
-              fill
-              className="object-cover"
-            />
+          <div className="relative w-12 h-12 rounded-full overflow-hidden bg-gray-200 flex items-center justify-center">
+            <i className="bi bi-person-circle text-4xl text-[#9A2329]"></i>
           </div>
           {isOpen && (
             <div className="flex-1 min-w-0">
