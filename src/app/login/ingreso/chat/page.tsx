@@ -4,16 +4,8 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Sidebar from '../../components/Sidebar';
 
-interface UserData {
-  Nombre: string | null;
-  Apellido: string;
-  Mail: string;
-  session_token: string;
-}
-
 export default function ChatPage() {
   const router = useRouter();
-  const [userData, setUserData] = useState<UserData | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -25,7 +17,6 @@ export default function ChatPage() {
 
     try {
       const parsedData = JSON.parse(storedData);
-      setUserData(parsedData);
     } catch (err) {
       console.error('Error al parsear los datos del usuario:', err);
       router.push('/login');

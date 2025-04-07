@@ -13,7 +13,6 @@ interface UserData {
 
 export default function OfertasPage() {
   const router = useRouter();
-  const [userData, setUserData] = useState<UserData | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -25,7 +24,6 @@ export default function OfertasPage() {
 
     try {
       const parsedData = JSON.parse(storedData);
-      setUserData(parsedData);
     } catch (err) {
       console.error('Error al parsear los datos del usuario:', err);
       router.push('/login');

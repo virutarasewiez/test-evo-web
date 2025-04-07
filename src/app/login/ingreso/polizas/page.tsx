@@ -91,28 +91,29 @@ export default function PolizasPage() {
 
   const getSortedPolizas = (polizas: Poliza[]) => {
     return [...polizas].sort((a, b) => {
-      let valueA: any = a;
-      let valueB: any = b;
-      
-      // Manejar campos anidados
-      const fields = sortField.split('.');
-      for (const field of fields) {
-        valueA = valueA[field];
-        valueB = valueB[field];
-      }
+      const getNestedValue = (obj: any, path: string): any => {
+        return path.split('.').reduce((acc, part) => acc && acc[part], obj);
+      };
+
+      const valueA = getNestedValue(a, sortField);
+      const valueB = getNestedValue(b, sortField);
 
       if (valueA === null) return sortOrder === 'asc' ? -1 : 1;
       if (valueB === null) return sortOrder === 'asc' ? 1 : -1;
 
-      if (typeof valueA === 'string') {
+      if (typeof valueA === 'string' && typeof valueB === 'string') {
         return sortOrder === 'asc' 
           ? valueA.localeCompare(valueB)
           : valueB.localeCompare(valueA);
       }
 
-      return sortOrder === 'asc' 
-        ? valueA - valueB
-        : valueB - valueA;
+      if (typeof valueA === 'number' && typeof valueB === 'number') {
+        return sortOrder === 'asc' 
+          ? valueA - valueB
+          : valueB - valueA;
+      }
+
+      return 0;
     });
   };
 
@@ -139,7 +140,6 @@ export default function PolizasPage() {
 
   const totalSumaAsegurada = polizas.reduce((sum, poliza) => sum + poliza.Riesgo.SumaAsegurada, 0);
   const polizasVigentes = polizas.filter(poliza => isPolizaVigente(poliza)).length;
-  const promedioSumaAsegurada = totalSumaAsegurada / polizas.length;
   const polizasRecientes = polizas.filter(poliza => {
     const fechaVigencia = new Date(poliza.VigenciaDesde);
     const hoy = new Date();
