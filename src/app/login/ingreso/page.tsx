@@ -7,8 +7,8 @@ export default function IngresoPage() {
   const router = useRouter();
 
   useEffect(() => {
-    // Redirigir a la página de pólizas
-    router.push('/login/ingreso/polizas');
+    // Redirigir a la página de bienvenida
+    router.push('/login/ingreso/bienvenida');
   }, [router]);
 
   return (
