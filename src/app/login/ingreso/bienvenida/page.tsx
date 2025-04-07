@@ -52,8 +52,8 @@ export default function BienvenidaPage() {
   return (
     <div className="flex">
       <Sidebar onToggle={setIsSidebarOpen} />
-      <main className={`flex-1 min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 transition-all duration-300 ${isSidebarOpen ? 'ml-64' : 'ml-20'}`}>
-        <div className="max-w-4xl mx-auto">
+      <main className={`flex-1 min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 transition-all duration-300 ${isSidebarOpen ? 'ml-64' : 'ml-20'} flex items-center justify-center`}>
+        <div className="max-w-4xl w-full mx-auto px-4">
           <div className="bg-white rounded-xl shadow-lg p-8">
             <div className="text-center">
               <h1 className="text-4xl font-bold text-gray-900 mb-4">

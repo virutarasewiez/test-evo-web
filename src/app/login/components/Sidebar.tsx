@@ -12,10 +12,20 @@ interface UserData {
   session_token: string;
 }
 
-export default function Sidebar() {
+interface SidebarProps {
+  onToggle?: (isOpen: boolean) => void;
+}
+
+export default function Sidebar({ onToggle }: SidebarProps) {
   const router = useRouter();
   const [userData, setUserData] = useState<UserData | null>(null);
   const [isOpen, setIsOpen] = useState(true);
+
+  const handleToggle = () => {
+    const newState = !isOpen;
+    setIsOpen(newState);
+    onToggle?.(newState);
+  };
 
   useEffect(() => {
     const storedData = localStorage.getItem('userData');
@@ -42,7 +52,7 @@ export default function Sidebar() {
     <div className={`fixed left-0 top-0 h-full bg-white shadow-lg transition-all duration-300 ${isOpen ? 'w-64' : 'w-20'}`}>
       {/* Toggle Button */}
       <button
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={handleToggle}
         className="absolute -right-3 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-1.5 shadow-md hover:bg-gray-100"
       >
         <svg
