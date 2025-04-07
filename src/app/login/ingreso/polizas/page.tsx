@@ -484,11 +484,11 @@ export default function PolizasPage() {
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm">
                         {isPolizaVigente(poliza) ? (
-                          <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary-light text-primary">
+                          <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-200 text-green-600">
                             Vigente
                           </span>
                         ) : (
-                          <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800">
+                          <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-200 text-red-600">
                             No Vigente
                           </span>
                         )}
