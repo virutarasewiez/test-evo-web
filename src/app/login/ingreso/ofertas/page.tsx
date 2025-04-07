@@ -47,8 +47,8 @@ export default function OfertasPage() {
   return (
     <div className="flex h-screen">
       <Sidebar onToggle={handleSidebarToggle} />
-      <div className={`flex-1 ${sidebarOpen ? 'ml-64' : 'ml-20'} transition-all duration-300 min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 p-8`}>
-        <div className="max-w-4xl mx-auto">
+      <div className={`flex-1 ${sidebarOpen ? 'ml-64' : 'ml-20'} transition-all duration-300 min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center`}>
+        <div className="max-w-4xl w-full mx-auto px-4">
           <div className="bg-white rounded-xl shadow-lg p-8">
             <h1 className="text-3xl font-bold text-gray-900 mb-6">Ofertas Disponibles</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

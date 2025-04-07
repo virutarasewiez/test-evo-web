@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import Sidebar from '../../components/Sidebar';
 
 interface UserData {
@@ -66,22 +67,28 @@ export default function BienvenidaPage() {
                 <div className="bg-blue-50 rounded-lg p-6">
                   <h2 className="text-xl font-semibold text-blue-900 mb-2">Accesos Rápidos</h2>
                   <ul className="space-y-2">
-                    <li className="flex items-center text-blue-700">
-                      <span className="mr-2">📋</span>
-                      Ver mis pólizas
+                    <li>
+                      <Link href="/login/ingreso/polizas" className="flex items-center text-blue-700 hover:text-blue-900 transition-colors">
+                        <span className="mr-2">📋</span>
+                        Ver mis pólizas
+                      </Link>
                     </li>
-                    <li className="flex items-center text-blue-700">
-                      <span className="mr-2">💰</span>
-                      Gestionar cobros
+                    <li>
+                      <Link href="/login/ingreso/cobros" className="flex items-center text-blue-700 hover:text-blue-900 transition-colors">
+                        <span className="mr-2">💰</span>
+                        Gestionar cobros
+                      </Link>
                     </li>
-                    <li className="flex items-center text-blue-700">
-                      <span className="mr-2">📞</span>
-                      Contactar soporte
+                    <li>
+                      <Link href="/login/ingreso/chat" className="flex items-center text-blue-700 hover:text-blue-900 transition-colors">
+                        <span className="mr-2">📞</span>
+                        Contactar soporte
+                      </Link>
                     </li>
                   </ul>
                 </div>
                 <div className="bg-green-50 rounded-lg p-6">
-                  <h2 className="text-xl font-semibold text-green-900 mb-2">Información de Contacto</h2>
+                  <h2 className="text-xl font-semibold text-green-900 mb-2">Información de Usuario</h2>
                   <ul className="space-y-2">
                     <li className="flex items-center text-green-700">
                       <span className="mr-2">📧</span>
