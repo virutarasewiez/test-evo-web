@@ -41,7 +41,7 @@ export default function Seguros() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">Elegí la cobertura ideal para vos</h2>
-          <div className="h-1 w-24 bg-red-600 mx-auto rounded"></div>
+          <div className="h-1 w-24 bg-primary mx-auto rounded"></div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -51,11 +51,11 @@ export default function Seguros() {
               className="bg-white rounded-lg shadow p-6 flex flex-col justify-between"
             >
               <div>
-                <h3 className="text-xl font-semibold text-red-600 text-center mb-4">{seguro.title}</h3>
+                <h3 className="text-xl font-semibold text-primary text-center mb-4">{seguro.title}</h3>
                 <ul className="space-y-3">
                   {seguro.items.map((item, index) => (
                     <li key={index} className="flex items-center text-gray-800">
-                      <i className={`bi ${item.icon} text-red-600 text-xl mr-3`}></i>
+                      <i className={`bi ${item.icon} text-primary text-xl mr-3`}></i>
                       <span>{item.text}</span>
                     </li>
                   ))}
@@ -64,7 +64,7 @@ export default function Seguros() {
               <div className="mt-6 text-center">
                 <Link
                   href="#"
-                  className="inline-block bg-red-600 text-white px-5 py-2 rounded-lg hover:bg-red-700 transition"
+                  className="inline-block bg-primary text-white px-5 py-2 rounded-lg hover:bg-primary-hover transition"
                 >
                   Más información
                 </Link>

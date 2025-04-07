@@ -60,7 +60,7 @@ export default function Carrusel() {
             <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-60 text-white p-4 rounded-xl text-center max-w-xs md:max-w-xl">
               <h2 className="text-xl md:text-3xl font-bold mb-2">{slide.title}</h2>
               <p className="text-sm md:text-base mb-4">{slide.description}</p>
-              <Link href={slide.link} className="bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded-md inline-block">
+              <Link href={slide.link} className="bg-primary hover:bg-primary-hover text-white py-2 px-4 rounded-md inline-block">
                 Conocer más
               </Link>
             </div>

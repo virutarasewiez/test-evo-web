@@ -7,23 +7,28 @@ export default function ConvenioUOM() {
       <div className="container mx-auto px-4 py-8">
       <div className="text-center mb-10">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">CONVENIO UOM</h2>
-          <div className="h-1 w-24 bg-red-600 mx-auto rounded"></div>
+          <div className="h-1 w-24 bg-primary mx-auto rounded"></div>
         </div>
         
         <div className="bg-white rounded-lg shadow-lg p-6 mb-8">
-          <p className="text-lg mb-4">
-            Evolución Seguros ha sido elegida por la Unión Obrera Metalúrgica para asegurar a sus afiliados. 
-            A partir del 1 del enero, en seguro de sepelio colectivo y, desde el 1 de febrero, en seguro de vida colectivo.
-          </p>
-        </div>
+  <p className="text-lg mb-4">
+    Fuimos elegidos por la <strong>UOM</strong> para brindar cobertura a sus afiliados, y eso nos llena de orgullo. A partir de ahora, nos hacemos cargo del <strong>seguro de sepelio colectivo</strong> y del <strong>seguro de vida colectivo</strong>, siempre con atención personalizada y un trato humano, como te merecés.
+  </p>
+  <p className="text-lg mb-4">
+    Cada afiliado cuenta con un equipo dedicado 🙋‍♂️🙋‍♀️ para resolver dudas y estar presente cuando más lo necesita. Nuestra cobertura es clara, simple y confiable, y además, gestionamos todo de forma rápida.
+  </p>
+  <p className="text-lg">
+    En Evolución, creemos en acompañarte con compromiso y empatía. <strong>Siempre de la mano con vos 🤝</strong>.
+  </p>
+</div>
 
         <div className="grid md:grid-cols-2 gap-8 mb-8">
           <div className="bg-white rounded-lg shadow-lg p-6">
             
             <h2 className="text-xl font-semibold mb-4">En caso de fallecimiento:</h2>
             <div className="flex items-center justify-center gap-2">
-              <i className="bi bi-telephone-fill text-red-600 text-2xl"></i>
-              <p className="text-2xl font-bold text-red-600 mb-2">0800-345-7373</p>
+              <i className="bi bi-telephone-fill text-primary text-2xl"></i>
+              <p className="text-2xl font-bold text-primary mb-2">0800-345-7373</p>
             </div>
           </div>
 

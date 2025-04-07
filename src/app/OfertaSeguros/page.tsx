@@ -28,7 +28,7 @@ export default function Home() {
         <div className="max-w-3xl mx-auto text-center">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Contratá los seguros que tenemos para vos</h2>
-            <div className="h-1 w-24 bg-red-600 mx-auto rounded"></div>
+            <div className="h-1 w-24 bg-primary mx-auto rounded"></div>
           </div>
           
           <p className="text-lg mb-6 text-gray-800">
@@ -41,7 +41,7 @@ export default function Home() {
               key={index}
               className="p-3 flex flex-col items-center bg-gray-100 rounded-lg shadow-sm hover:shadow-md transition"
             >
-              <i className={`${seguro.icon} text-2xl text-red-600`} />
+              <i className={`${seguro.icon} text-2xl text-primary`} />
               <div className="mt-2 text-sm text-center text-gray-800">
                 {seguro.label}
               </div>

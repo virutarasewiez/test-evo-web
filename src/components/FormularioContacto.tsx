@@ -63,7 +63,7 @@ export default function FormularioContacto() {
         ) : (
           <form onSubmit={handleSubmit} className="bg-gray-50 p-8 rounded-lg shadow-md">
             {error && (
-              <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-6">
+              <div className="bg-primary-light border border-primary text-primary px-4 py-3 rounded mb-6">
                 {error}
               </div>
             )}
@@ -71,7 +71,7 @@ export default function FormularioContacto() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <div>
                 <label htmlFor="nombre" className="block text-gray-800 font-medium mb-2">
-                  Nombre completo <span className="text-red-600">*</span>
+                  Nombre completo <span className="text-primary">*</span>
                 </label>
                 <input
                   type="text"
@@ -87,7 +87,7 @@ export default function FormularioContacto() {
               
               <div>
                 <label htmlFor="email" className="block text-gray-800 font-medium mb-2">
-                  Correo electrónico <span className="text-red-600">*</span>
+                  Correo electrónico <span className="text-primary">*</span>
                 </label>
                 <input
                   type="email"
@@ -141,7 +141,7 @@ export default function FormularioContacto() {
             
             <div className="mb-6">
               <label htmlFor="mensaje" className="block text-gray-800 font-medium mb-2">
-                Mensaje <span className="text-red-600">*</span>
+                Mensaje <span className="text-primary">*</span>
               </label>
               <textarea
                 id="mensaje"
@@ -158,7 +158,7 @@ export default function FormularioContacto() {
             <div className="text-center">
               <button
                 type="submit"
-                className="bg-red-600 text-white text-lg px-8 py-3 rounded-lg hover:bg-red-700 transition"
+                className="bg-primary text-white text-lg px-8 py-3 rounded-lg hover:bg-primary-hover transition"
               >
                 Enviar mensaje
               </button>

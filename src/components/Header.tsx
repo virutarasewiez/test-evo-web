@@ -43,7 +43,7 @@ export default function Header() {
         <div className="flex items-center space-x-4">
           <Link
             href="/oficinavirtual"
-            className="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition flex items-center"
+            className="bg-primary text-white px-4 py-2 rounded hover:bg-primary-hover transition flex items-center"
           >
             <i className="bi bi-building-door mr-2"></i>Oficina Virtual
           </Link>

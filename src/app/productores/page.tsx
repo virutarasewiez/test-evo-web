@@ -18,7 +18,7 @@ export default function Page() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold mb-3 text-gray-800">OFICINA VIRTUAL PAS</h2>
-            <div className="h-1 w-24 mx-auto bg-red-600"></div>
+            <div className="h-1 w-24 mx-auto bg-primary"></div>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -30,7 +30,7 @@ export default function Page() {
                 rel={rel}
                 className="bg-white shadow rounded-lg p-6 text-center hover:shadow-lg transition"
               >
-                <i className={`bi ${icon} text-red-600 text-4xl mb-4 block`} />
+                <i className={`bi ${icon} text-primary text-4xl mb-4 block`} />
                 <h5 className="text-lg font-medium text-gray-800">{label}</h5>
               </a>
             ))}

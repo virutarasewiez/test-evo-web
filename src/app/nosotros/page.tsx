@@ -56,7 +56,7 @@ export default function Page() {
     <div className="bg-gradient-to-b from-gray-50 to-white">
       {/* Hero Section */}
       <section className="relative py-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-red-600/10 to-red-600/5"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-primary/5"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center">
             <h1 className="text-5xl font-extrabold text-gray-900 mb-8 tracking-tight">
@@ -74,7 +74,7 @@ export default function Page() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">Los valores que nos caracterizan</h2>
-            <div className="h-1 w-32 bg-red-600 mx-auto rounded-full mb-8"></div>
+            <div className="h-1 w-32 bg-primary mx-auto rounded-full mb-8"></div>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               En Evolución seguros, nos comprometemos a prestar servicios con calidad, adecuados a las necesidades y expectativas de nuestros clientes, brindando tranquilidad y seguridad mediante soluciones efectivas, respaldadas en los valores que nos caracterizan como organización.
             </p>
@@ -88,7 +88,7 @@ export default function Page() {
               >
                 <div className="text-center">
                   <div className="inline-block p-4 bg-red-50 rounded-full mb-6">
-                    <i className={`bi ${valor.icon} text-4xl text-red-600`}></i>
+                    <i className={`bi ${valor.icon} text-4xl text-primary`}></i>
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-4">{valor.titulo}</h3>
                   <p className="text-gray-600 leading-relaxed">{valor.descripcion}</p>
@@ -106,7 +106,7 @@ export default function Page() {
             <div className="bg-white rounded-xl shadow-lg p-10 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
               <div className="flex items-center mb-6">
                 <div className="h-12 w-12 bg-red-100 rounded-lg flex items-center justify-center mr-4">
-                  <i className="bi bi-bullseye text-2xl text-red-600"></i>
+                  <i className="bi bi-bullseye text-2xl text-primary"></i>
                 </div>
                 <h2 className="text-2xl font-bold text-gray-900">Nuestros Objetivos</h2>
               </div>
@@ -117,7 +117,7 @@ export default function Page() {
             <div className="bg-white rounded-xl shadow-lg p-10 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
               <div className="flex items-center mb-6">
                 <div className="h-12 w-12 bg-red-100 rounded-lg flex items-center justify-center mr-4">
-                  <i className="bi bi-compass text-2xl text-red-600"></i>
+                  <i className="bi bi-compass text-2xl text-primary"></i>
                 </div>
                 <h2 className="text-2xl font-bold text-gray-900">Hacia dónde vamos</h2>
               </div>
