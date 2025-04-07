@@ -1,15 +1,6 @@
 import Asesoramiento from "@/components/asesoramiento";
 import Link from "next/link";
 
-// Función para normalizar texto (quitar acentos y caracteres especiales)
-const normalizeText = (text: string) => {
-  return text
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .toLowerCase()
-    .replace(/\s+/g, '-');
-};
-
 export default function Home() {
   const seguros = [
     // { label: "Protección Personal", icon: "bi-person" },
