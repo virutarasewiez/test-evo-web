@@ -5,32 +5,32 @@ const seguros = [
     id: 1,
     title: 'Protección Personal',
     items: [
-      { icon: 'bi-shield-check', text: 'Vida Colectivo' },
-      { icon: 'bi-heart', text: 'Sepelio' },
-      { icon: 'bi-bandaid', text: 'Accidentes Personales' },
-      { icon: 'bi-house-check', text: 'Garantía de Alquiler' }
+      { icon: 'bi-shield-check', text: 'Vida Colectivo', href: '/seguros/productos/pp-vidacolectivo' },
+      { icon: 'bi-heart', text: 'Sepelio', href: '/seguros/productos/pp-sepelio' },
+      { icon: 'bi-bandaid', text: 'Accidentes Personales', href: '/seguros/productos/pp-accidentespersonales' },
+      { icon: 'bi-house-check', text: 'Garantía de Alquiler', href: '/seguros/productos/pp-garantiadealquiler' }
     ]
   },
   {
     id: 2,
     title: 'Protección Familiar',
     items: [
-      { icon: 'bi-people', text: 'Combinado Familiar' },
-      { icon: 'bi-house-gear', text: 'Seguro de Incendio' },
-      { icon: 'bi-mortarboard', text: 'Educación Segura' }
+      { icon: 'bi-people', text: 'Combinado Familiar', href: '/seguros/productos/pf-combinadofamiliar' },
+      { icon: 'bi-house-gear', text: 'Seguro de Incendio', href: '/seguros/productos/pf-segurodeincendio' },
+      { icon: 'bi-mortarboard', text: 'Educación Segura', href: '/seguros/productos/pf-educacionsegura' }
     ]
   },
   {
     id: 3,
     title: 'Protección Empresarial',
     items: [
-      { icon: 'bi-building-lock', text: 'Caución' },
-      { icon: 'bi-briefcase', text: 'Responsabilidad Civil General' },
-      { icon: 'bi-shop', text: 'Integral de Comercio' },
-      { icon: 'bi-buildings', text: 'Integral de Consorcio' },
-      { icon: 'bi-gear', text: 'Seguros Técnicos' },
-      { icon: 'bi-truck', text: 'Transporte de Mercadería' },
-      { icon: 'bi-hospital', text: 'Praxis Médica' }
+      { icon: 'bi-building-lock', text: 'Caución', href: '/seguros/productos/pe-caucion' },
+      { icon: 'bi-briefcase', text: 'Responsabilidad Civil General', href: '/seguros/productos/pe-responsabilidadcivilgeneral' },
+      { icon: 'bi-shop', text: 'Integral de Comercio', href: '/seguros/productos/pe-integraldecomercio' },
+      { icon: 'bi-buildings', text: 'Integral de Consorcio', href: '/seguros/productos/pe-integraldeconsorcio' },
+      { icon: 'bi-gear', text: 'Seguros Técnicos', href: '/seguros/productos/pe-segurostecnicos' },
+      { icon: 'bi-truck', text: 'Transporte de Mercadería', href: '/seguros/productos/pe-transportedemercaderia' },
+      { icon: 'bi-hospital', text: 'Praxis Médica', href: '/seguros/productos/pe-praxismedica' }
     ]
   }
 ];
@@ -54,16 +54,21 @@ export default function Seguros() {
                 <h3 className="text-xl font-semibold text-primary text-center mb-4">{seguro.title}</h3>
                 <ul className="space-y-3">
                   {seguro.items.map((item, index) => (
-                    <li key={index} className="flex items-center text-gray-800">
-                      <i className={`bi ${item.icon} text-primary text-xl mr-3`}></i>
-                      <span>{item.text}</span>
+                    <li key={index}>
+                      <Link 
+                        href={item.href}
+                        className="flex items-center text-gray-800 hover:text-primary transition-colors"
+                      >
+                        <i className={`bi ${item.icon} text-primary text-xl mr-3`}></i>
+                        <span>{item.text}</span>
+                      </Link>
                     </li>
                   ))}
                 </ul>
               </div>
               <div className="mt-6 text-center">
                 <Link
-                  href="#"
+                  href={`/seguros/productos/${seguro.title.toLowerCase().replace(/\s+/g, '-')}`}
                   className="inline-block bg-primary text-white px-5 py-2 rounded-lg hover:bg-primary-hover transition"
                 >
                   Más información
