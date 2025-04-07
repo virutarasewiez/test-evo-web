@@ -7,6 +7,7 @@ import Sidebar from '../../components/Sidebar';
 export default function ContactoPage() {
   const router = useRouter();
   const [loading, setLoading] = useState(true);
+  const [sidebarOpen, setSidebarOpen] = useState(true);
 
   useEffect(() => {
     const storedData = localStorage.getItem('userData');
@@ -25,11 +26,15 @@ export default function ContactoPage() {
     }
   }, [router]);
 
+  const handleSidebarToggle = (isOpen: boolean) => {
+    setSidebarOpen(isOpen);
+  };
+
   if (loading) {
     return (
-      <div className="flex">
-        <Sidebar />
-        <div className="flex-1 ml-64 min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center">
+      <div className="flex h-screen">
+        <Sidebar onToggle={handleSidebarToggle} />
+        <div className={`flex-1 ${sidebarOpen ? 'ml-64' : 'ml-20'} transition-all duration-300 min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center`}>
           <div className="flex items-center space-x-4">
             <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-500"></div>
             <span className="text-lg text-gray-600">Cargando...</span>
@@ -40,9 +45,9 @@ export default function ContactoPage() {
   }
 
   return (
-    <div className="flex">
-      <Sidebar />
-      <div className="flex-1 ml-64 min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 p-8">
+    <div className="flex h-screen">
+      <Sidebar onToggle={handleSidebarToggle} />
+      <div className={`flex-1 ${sidebarOpen ? 'ml-64' : 'ml-20'} transition-all duration-300 min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 p-8`}>
         <div className="max-w-4xl mx-auto">
           <div className="bg-white rounded-xl shadow-lg p-8">
             <h1 className="text-3xl font-bold text-gray-900 mb-6">Contacto</h1>

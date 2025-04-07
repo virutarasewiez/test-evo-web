@@ -38,6 +38,7 @@ export default function PolizasPage() {
   const [searchTerm, setSearchTerm] = useState('');
   const [sortField, setSortField] = useState<SortField>('PolizaNro');
   const [sortOrder, setSortOrder] = useState<SortOrder>('asc');
+  const [sidebarOpen, setSidebarOpen] = useState(true);
 
   useEffect(() => {
     const fetchPolizas = async () => {
@@ -79,6 +80,10 @@ export default function PolizasPage() {
 
     fetchPolizas();
   }, [router]);
+
+  const handleSidebarToggle = (isOpen: boolean) => {
+    setSidebarOpen(isOpen);
+  };
 
   const handleSort = (field: SortField) => {
     if (sortField === field) {
@@ -204,9 +209,9 @@ export default function PolizasPage() {
 
   if (loading) {
     return (
-      <div className="flex">
-        <Sidebar />
-        <div className="flex-1 ml-64 min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center">
+      <div className="flex h-screen">
+        <Sidebar onToggle={handleSidebarToggle} />
+        <div className={`flex-1 ${sidebarOpen ? 'ml-64' : 'ml-20'} transition-all duration-300 min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center`}>
           <div className="flex items-center space-x-4">
             <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-500"></div>
             <span className="text-lg text-gray-600">Cargando pólizas...</span>
@@ -218,9 +223,9 @@ export default function PolizasPage() {
 
   if (error) {
     return (
-      <div className="flex">
-        <Sidebar />
-        <div className="flex-1 ml-64 min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center p-4">
+      <div className="flex h-screen">
+        <Sidebar onToggle={handleSidebarToggle} />
+        <div className={`flex-1 ${sidebarOpen ? 'ml-64' : 'ml-20'} transition-all duration-300 min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center p-4`}>
           <div className="bg-white rounded-xl shadow-lg p-6 max-w-2xl w-full border-l-4 border-red-500">
             <div className="flex items-center space-x-3 mb-4">
               <svg className="h-6 w-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -245,9 +250,9 @@ export default function PolizasPage() {
   }
 
   return (
-    <div className="flex">
-      <Sidebar />
-      <div className="flex-1 ml-64 min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 p-4">
+    <div className="flex h-screen">
+      <Sidebar onToggle={handleSidebarToggle} />
+      <div className={`flex-1 ${sidebarOpen ? 'ml-64' : 'ml-20'} transition-all duration-300 min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 p-4 overflow-auto`}>
         <div className="w-full">
           {/* Tarjetas de Resumen */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">

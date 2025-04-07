@@ -49,7 +49,7 @@ export default function Sidebar({ onToggle }: SidebarProps) {
   ];
 
   return (
-    <div className={`fixed left-0 top-0 h-full bg-white shadow-lg transition-all duration-300 ${isOpen ? 'w-64' : 'w-20'}`}>
+    <div className={`fixed left-0 top-0 h-full bg-white shadow-lg transition-all duration-300 z-50 ${isOpen ? 'w-64' : 'w-20'}`}>
       {/* Toggle Button */}
       <button
         onClick={handleToggle}

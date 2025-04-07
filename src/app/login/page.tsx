@@ -4,6 +4,7 @@ import Image from "next/image"
 import { useState, useEffect } from "react";
 import { authenticateUser } from "./auth";
 import { useRouter } from "next/navigation";
+import Header from "../../components/Header";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -56,6 +57,7 @@ export default function LoginPage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <Header />
       {/* Main content */}
       <div className="flex min-h-screen">
         {/* Left Column - Branding */}
