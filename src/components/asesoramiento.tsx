@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Asesoramiento() {
   return (
     <section className="bg-gray-100 py-10">
@@ -7,8 +9,12 @@ export default function Asesoramiento() {
           Nuestros expertos están listos para ayudarte a encontrar la mejor solución para tus necesidades.
         </p>
         <div className="flex justify-center gap-4">
-          <a className="bg-primary text-white text-lg px-6 py-3 rounded-lg hover:bg-primary-hover transition" href="contacto">Contáctanos</a>
-          <a className="bg-primary text-white text-lg px-6 py-3 rounded-lg hover:bg-primary-hover transition" href="oficinavirtual">Oficina Virtual</a>
+          <Link href="/contacto" className="bg-primary text-white text-lg px-6 py-3 rounded-lg hover:bg-primary-hover transition">
+            Contáctanos
+          </Link>
+          <Link href="/oficinavirtual" className="bg-primary text-white text-lg px-6 py-3 rounded-lg hover:bg-primary-hover transition">
+            Oficina Virtual
+          </Link>
         </div>
       </div>
     </section>

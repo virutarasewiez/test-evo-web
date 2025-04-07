@@ -39,7 +39,8 @@ const seguros = [
       { icon: 'bi-buildings', text: 'Integral de Consorcio', href: '/seguros/productos/pe-integraldeconsorcio' },
       { icon: 'bi-gear', text: 'Seguros Técnicos', href: '/seguros/productos/pe-segurostecnicos' },
       { icon: 'bi-truck', text: 'Transporte de Mercadería', href: '/seguros/productos/pe-transportedemercaderia' },
-      { icon: 'bi-hospital', text: 'Praxis Médica', href: '/seguros/productos/pe-praxismedica' }
+      { icon: 'bi-hospital', text: 'Praxis Médica', href: '/seguros/productos/pe-praxismedica' },
+      { icon: 'bi-briefcase', text: 'Praxis Profesional', href: '/seguros/productos/pe-praxisprofesionales' }
     ]
   }
 ];
