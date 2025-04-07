@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Sidebar from '../../components/Sidebar';
+import Seguros from '@/components/seguros';
 
 export default function OfertasPage() {
   const router = useRouter();
@@ -47,20 +48,9 @@ export default function OfertasPage() {
   return (
     <div className="flex h-screen">
       <Sidebar onToggle={handleSidebarToggle} />
-      <div className={`flex-1 ${sidebarOpen ? 'ml-64' : 'ml-20'} transition-all duration-300 min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center pt-16`}>
-        <div className="max-w-4xl w-full mx-auto px-4">
-          <div className="bg-white rounded-xl shadow-lg p-8">
-            <h1 className="text-3xl font-bold text-[#9A2329] mb-6">Ofertas Disponibles</h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-gray-50 rounded-lg p-6 border border-gray-100">
-                <h2 className="text-xl font-semibold text-[#9A2329] mb-4">Próximamente</h2>
-                <div className="flex items-center text-gray-700">
-                  <i className="bi bi-gift text-xl mr-3 text-[#9A2329]"></i>
-                  <p>Estamos preparando las mejores ofertas para ti.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div className={`flex-1 ${sidebarOpen ? 'ml-64' : 'ml-20'} transition-all duration-300 min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 pt-16 flex items-center justify-center`}>
+        <div className="w-full max-w-6xl mx-auto px-4">
+          <Seguros />
         </div>
       </div>
     </div>
