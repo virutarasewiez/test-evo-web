@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Sidebar from '../../components/Sidebar';
 import Link from 'next/link';
@@ -94,6 +94,14 @@ interface Poliza {
 }
 
 export default function DetallePolizaPage() {
+  return (
+    <Suspense fallback={<div>Cargando...</div>}>
+      <DetallePolizaContent />
+    </Suspense>
+  );
+}
+
+function DetallePolizaContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [polizas, setPolizas] = useState<Poliza[]>([]);
