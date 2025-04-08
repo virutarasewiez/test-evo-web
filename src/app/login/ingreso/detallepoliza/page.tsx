@@ -101,9 +101,9 @@ export default function DetallePolizaPage() {
   const [error, setError] = useState<string | null>(null);
   const [selectedPoliza, setSelectedPoliza] = useState<Poliza | null>(null);
   const [sidebarOpen, setSidebarOpen] = useState(true);
-  const [totalSumaAsegurada, setTotalSumaAsegurada] = useState(0);
-  const [polizasVigentes, setPolizasVigentes] = useState(0);
-  const [polizasRecientes, setPolizasRecientes] = useState(0);
+  const [, setTotalSumaAsegurada] = useState(0);
+  const [, setPolizasVigentes] = useState(0);
+  const [, setPolizasRecientes] = useState(0);
 
   // Función para determinar el tamaño del texto según la longitud
   const getTextSizeClass = (text: string) => {
@@ -166,6 +166,8 @@ export default function DetallePolizaPage() {
             return fechaEmision >= tresMesesAtras;
           }).length;
           setPolizasRecientes(recientes);
+          
+          console.log({ totalSumaAsegurada: sumaTotal, polizasVigentes: vigentes, polizasRecientes: recientes });
           
           // Obtener el ID de la póliza de la URL
           const polizaId = searchParams.get('id');
