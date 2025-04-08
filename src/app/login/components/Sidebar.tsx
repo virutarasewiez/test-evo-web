@@ -43,6 +43,7 @@ export default function Sidebar({ onToggle }: SidebarProps) {
     { name: 'Productos', path: '/login/ingreso/productos', icon: 'bi-file-text' },
     { name: 'Siniestros', path: '/login/ingreso/siniestros', icon: 'bi-file-text' },
     { name: 'Pólizas', path: '/login/ingreso/polizas', icon: 'bi-file-earmark-text' },
+    { name: 'Detalle de Pólizas', path: '/login/ingreso/detallepoliza', icon: 'bi-file-earmark-text' },
     { name: 'Cobros', path: '/login/ingreso/cobros', icon: 'bi-cash' },
     { name: 'Contacto', path: '/login/ingreso/contacto', icon: 'bi-telephone' },
     { name: 'Chat', path: '/login/ingreso/chat', icon: 'bi-chat-dots' },

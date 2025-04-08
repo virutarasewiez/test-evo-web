@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Sidebar from '../../components/Sidebar';
+import Link from 'next/link';
 
 interface Poliza {
   IdPoliza: number;
@@ -447,8 +448,13 @@ export default function PolizasPage() {
                 <tbody className="bg-white divide-y divide-gray-200">
                   {filteredPolizas.map((poliza) => (
                     <tr key={poliza.IdPoliza} className="hover:bg-gray-50 transition-colors duration-150">
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                        {poliza.PolizaNro}
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                        <Link 
+                          href={`/login/ingreso/detallepoliza?id=${poliza.IdPoliza}`}
+                          className="text-[#9A2329] hover:text-[#7A1C21] hover:underline"
+                        >
+                          {poliza.PolizaNro}
+                        </Link>
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                         <div className="max-w-xs truncate" title={poliza.Tomador.Nombre}>
