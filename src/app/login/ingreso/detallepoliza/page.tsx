@@ -60,7 +60,7 @@ interface Poliza {
     Codigo: string;
     Cuenta: string;
   };
-  Auto: any | null;
+  Auto: unknown | null;
   Riesgo: {
     CoberturaPaquete: string;
     SumaAsegurada: number;
@@ -71,7 +71,7 @@ interface Poliza {
     Descripcion: string;
     SumaAsegurada: number;
   }[];
-  Documentos: any[];
+  Documentos: unknown[];
   FormaCobro: {
     IdFormaCobro: number;
     Descripcion: string;
