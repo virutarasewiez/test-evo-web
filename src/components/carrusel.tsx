@@ -24,7 +24,7 @@ export default function Carrusel() {
       id: 3,
       image: '/assets/images/carousel-3.jpg',
       title: 'Protección Familiar',
-      description: 'La mejor cobertura para tu vos y tu familia.',
+      description: 'La mejor cobertura para vos y tu familia.',
       link: '/seguros/productos/proteccion-familiar',
     },
   ];
