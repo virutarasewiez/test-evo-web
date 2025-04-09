@@ -11,21 +11,21 @@ export default function Carrusel() {
       image: '/assets/images/carousel-1.jpg',
       title: 'Protección Empresarial',
       description: 'Cuidamos tu negocio, siempre seguro y en crecimiento.',
-      link: '/seguros/empresariales',
+      link: '/seguros/productos/proteccion-empresarial',
     },
     {
       id: 2,
       image: '/assets/images/carousel-2.jpg',
       title: 'Protección Personal',
       description: 'La seguridad que necesitás, con la tranquilidad que merecés.',
-      link: '/seguros/personales',
+      link: '/seguros/productos/proteccion-personal',
     },
     {
       id: 3,
       image: '/assets/images/carousel-3.jpg',
       title: 'Protección Familiar',
-      description: 'La mejor cobertura para tu hogar.',
-      link: '/seguros/familiares',
+      description: 'La mejor cobertura para tu vos y tu familia.',
+      link: '/seguros/productos/proteccion-familiar',
     },
   ];
 
