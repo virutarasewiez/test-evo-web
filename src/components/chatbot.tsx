@@ -28,9 +28,13 @@ const Chatbot = () => {
 
     // Limpieza al desmontar el componente
     return () => {
-      const existingScript = document.getElementById('zsiqscript');
-      if (existingScript) {
-        document.body.removeChild(existingScript);
+      try {
+        const existingScript = document.getElementById('zsiqscript');
+        if (existingScript && existingScript.parentNode) {
+          existingScript.parentNode.removeChild(existingScript);
+        }
+      } catch (error) {
+        console.error('Error al limpiar el script de Zoho SalesIQ:', error);
       }
     };
   }, []);
