@@ -11,46 +11,30 @@ export default function PraxisMedica() {
 
         <div className="prose max-w-none">
           <p className="text-lg text-gray-600 mb-6">
-            El seguro de praxis médica es una protección esencial para profesionales de la salud, brindando cobertura ante reclamos por mala praxis o negligencia médica. Diseñado específicamente para proteger tu ejercicio profesional y tu patrimonio.
+            Protegemos a médicos, auxiliares e instituciones ante reclamos de pacientes fundados en presuntos errores en el ejercicio de la actividad.
           </p>
-
-          <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Beneficios</h2>
-          <ul className="list-disc pl-6 mb-8 space-y-2 text-gray-800">
-            <li>Protección integral para tu ejercicio profesional</li>
-            <li>Cobertura ante reclamos por mala praxis</li>
-            <li>Asistencia legal especializada</li>
-            <li>Defensa técnica y jurídica</li>
-            <li>Primas adaptadas a tu especialidad</li>
-            <li>Servicio de atención personalizado</li>
-            <li>Gestión eficiente de siniestros</li>
-          </ul>
 
           <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Cobertura</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold text-primary mb-4">Coberturas Principales</h3>
               <ul className="list-disc pl-6 space-y-2 text-gray-800">
-                <li>Responsabilidad civil profesional</li>
-                <li>Mala praxis médica</li>
-                <li>Negligencia profesional</li>
-                <li>Daños y perjuicios</li>
+                <li>Doble reposición de suma asegurada</li>
+                <li>Sin franquicia</li>
+                <li>Ámbito de cobertura: República Argentina</li>
               </ul>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-primary mb-4">Servicios Adicionales</h3>
+              <h3 className="text-xl font-semibold text-primary mb-4">Servicios Incluidos</h3>
               <ul className="list-disc pl-6 space-y-2 text-gray-800">
-                <li>Asistencia legal 24/7</li>
-                <li>Defensa técnica</li>
-                <li>Mediación previa</li>
-                <li>Asesoramiento preventivo</li>
+                <li>Asesoría Médico-Legal: Profesionales en medicina legal para cualquier necesidad de apoyatura técnica</li>
+                <li>Asesoría General y Jurídica ante siniestros</li>
+                <li>Representación letrada</li>
+                <li>Capacitaciones con diversos temas con el objetivo de brindar herramientas a los profesionales que les permitan el ejercicio de su profesión a la reglamentación legal vigente, colaborar con la detección de vulnerabilidades en la práctica médica</li>
               </ul>
             </div>
           </div>
-
-          <p className="text-lg text-gray-600 mb-6">
-            Nuestro seguro de praxis médica está diseñado para brindarte la máxima protección en tu ejercicio profesional, con coberturas específicas para tu especialidad y un servicio de atención personalizado que entiende las necesidades únicas de los profesionales de la salud.
-          </p>
         </div>
 
         <Asesoramiento />

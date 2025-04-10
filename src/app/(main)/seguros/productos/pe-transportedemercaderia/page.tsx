@@ -11,45 +11,60 @@ export default function TransporteMercaderia() {
 
         <div className="prose max-w-none">
           <p className="text-lg text-gray-600 mb-6">
-            El seguro de transporte de mercadería es una protección esencial para tu carga, brindando cobertura ante riesgos durante el traslado de mercancías. Diseñado para proteger tu mercadería en todo momento, desde el origen hasta el destino.
+            Producto diseñado para cubrir los bienes y mercancías transportados ante los posibles riesgos que puedan existir durante su desplazamiento de una locación a otra y, al mismo tiempo, en aquellos períodos en los cuales tales bienes deben permanecer en depósitos en tránsito, antes de su llegada a destino final.
           </p>
 
-          <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Beneficios</h2>
-          <ul className="list-disc pl-6 mb-8 space-y-2 text-gray-800">
-            <li>Cobertura integral para tu mercadería</li>
-            <li>Protección durante todo el traslado</li>
-            <li>Respuesta inmediata ante siniestros</li>
-            <li>Asistencia las 24 horas</li>
-            <li>Primas competitivas</li>
-            <li>Servicio de atención personalizado</li>
-            <li>Gestión eficiente de siniestros</li>
-          </ul>
+          <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Tipos</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-primary mb-4">Terrestre</h3>
+              <p className="text-gray-600">
+                Mercancías transportadas por vía terrestre.
+              </p>
+            </div>
 
-          <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Cobertura</h2>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-primary mb-4">Marítimo</h3>
+              <p className="text-gray-600">
+                Mercancías transportadas por vía marítima y/o acuática en general. (Consulte por coberturas).
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-primary mb-4">Aéreo</h3>
+              <p className="text-gray-600">
+                Mercancías transportadas por vía aérea. (Consulte por coberturas).
+              </p>
+            </div>
+          </div>
+
+          <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Coberturas</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold text-primary mb-4">Coberturas Principales</h3>
               <ul className="list-disc pl-6 space-y-2 text-gray-800">
-                <li>Robo de mercadería</li>
-                <li>Accidentes de tránsito</li>
-                <li>Daños por manipulación</li>
-                <li>Responsabilidad civil</li>
+                <li>Choque, vuelco, desbarrancamiento o descarrilamiento del vehículo</li>
+                <li>Derrumbe, caída de árboles o postes</li>
+                <li>Incendio, explosión, rayo</li>
+                <li>Huracán, ciclón, tornado</li>
+                <li>Inundación, alud, aluvión</li>
               </ul>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold text-primary mb-4">Coberturas Adicionales</h3>
               <ul className="list-disc pl-6 space-y-2 text-gray-800">
-                <li>Daños por agua</li>
-                <li>Contaminación</li>
-                <li>Huelgas y disturbios</li>
-                <li>Asistencia en ruta</li>
+                <li>Robo con violencia sobre personas o mercaderías</li>
+                <li>Hurto</li>
+                <li>Desaparición</li>
+                <li>Descarga</li>
+                <li>Rotura, abolladura, derrame y mojadura</li>
               </ul>
             </div>
           </div>
 
           <p className="text-lg text-gray-600 mb-6">
-            Nuestro seguro de transporte de mercadería está diseñado para brindarte la máxima protección y tranquilidad en el traslado de tu carga, con coberturas adaptadas a tus necesidades específicas y un servicio de atención personalizado que está disponible cuando lo necesites.
+            Asegurá tu carga de aquellas pérdidas que puedan sufrir durante el transporte terrestre, marítimo, y/o aéreo. Te brindamos cobertura para viajes locales, importaciones o exportaciones.
           </p>
         </div>
 

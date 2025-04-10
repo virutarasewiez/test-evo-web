@@ -11,46 +11,78 @@ export default function CombinadoFamiliar() {
 
         <div className="prose max-w-none">
           <p className="text-lg text-gray-600 mb-6">
-            El seguro combinado familiar es una solución integral que protege tu hogar y a tu familia bajo una única póliza. Diseñado para brindarte tranquilidad y seguridad, cubriendo los riesgos más comunes que pueden afectar tu patrimonio y seres queridos.
+            Es un producto diseñado para proteger tu hogar de robo, incendio, todo riesgo de electrodomésticos, cristales, y más. A través de este seguro proteges tu vivienda, con el dinamismo de poder combinar las coberturas y planes de acuerdo a tus necesidades.
           </p>
 
-          <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Beneficios</h2>
-          <ul className="list-disc pl-6 mb-8 space-y-2 text-gray-800">
-            <li>Protección integral para tu hogar y familia</li>
-            <li>Múltiples coberturas en una sola póliza</li>
-            <li>Primas competitivas</li>
-            <li>Servicio de atención personalizado</li>
-            <li>Asistencia las 24 horas</li>
-            <li>Proceso de siniestro simplificado</li>
-            <li>Flexibilidad para adaptar las coberturas</li>
-          </ul>
-
-          <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Cobertura</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Coberturas</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-primary mb-4">Coberturas Principales</h3>
+              <h3 className="text-xl font-semibold text-primary mb-4">Coberturas Básicas</h3>
               <ul className="list-disc pl-6 space-y-2 text-gray-800">
-                <li>Incendio y riesgos de la naturaleza</li>
-                <li>Robo y hurto</li>
-                <li>Responsabilidad civil familiar</li>
-                <li>Cristales y cerraduras</li>
+                <li>Incendio: Edificio y Contenido General</li>
+                <li>Robo / Hurto: Contenido General</li>
+                <li>Cristales: Rotura y/o Rajadura de Cristales y /o espejos fijados verticalmente al edificio</li>
+                <li>Gastos de Limpieza y retiro de escombros</li>
+                <li>Gastos de Alojamiento</li>
+                <li>Gastos de Mudanza y guardamuebles</li>
               </ul>
             </div>
-            
+
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold text-primary mb-4">Coberturas Adicionales</h3>
               <ul className="list-disc pl-6 space-y-2 text-gray-800">
-                <li>Electrodomésticos</li>
+                <li>Responsabilidad Civil Linderos y Hechos privados</li>
+                <li>Robo de Dinero en efectivo (en domicilio)</li>
+                <li>Robo y/ Hurtos Específicos</li>
+                <li>Todo Riesgo en Domicilio: Daños por robo /incendio o daño de equipos conectados a corriente. No aplica para instrumentos musicales</li>
+                <li>Todo Riesgo en Argentina y el Mundo: Daños por robo /incendio o daño de equipos portátiles (Cámaras fotográficas, Tablet, Notebook, Filmadoras). No aplica para equipos celulares</li>
+                <li>Artefactos Sanitarios, Piletas y Mesadas: Rotura y Rajadura</li>
+                <li>Jugadores de Golf-Efectos Personales</li>
+                <li>Jugadores de Golf- Palos</li>
+                <li>Jugadores de Golf-Hoyo en uno</li>
+                <li>Jugadores de Golf-Responsabilidad Civil</li>
                 <li>Daños por agua</li>
-                <li>Asistencia al hogar</li>
-                <li>Vandalismo</li>
+                <li>Accidentes personales para el tomador: Muerte o invalidez</li>
+                <li>Accidentes personales para personal doméstico: Muerte o invalidez</li>
+                <li>Animales Domésticos: Robo</li>
+                <li>Animales Domésticos: Muerte o Sacrificio</li>
+                <li>Animales Domésticos: Gastos veterinarios</li>
+                <li>Animales Domésticos: Gastos de recuperación</li>
               </ul>
             </div>
           </div>
 
-          <p className="text-lg text-gray-600 mb-6">
-            Nuestro seguro combinado familiar está diseñado para brindarte la máxima protección y tranquilidad, con coberturas adaptadas a tus necesidades específicas y un servicio de atención personalizado que está disponible cuando lo necesites.
-          </p>
+          <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Beneficios y características</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-primary mb-4">Beneficios del producto</h3>
+              <ul className="list-disc pl-6 space-y-2 text-gray-800">
+                <li>Atención de urgencias 24 hrs a través del 0810-222-4663</li>
+                <li>Servicio de Urgencia domiciliaria para servicios de plomería, cerrajería, gas, electricidad y cristalería</li>
+                <li>Posibilidad de combinar coberturas de acuerdo a las necesidades de cada afiliado</li>
+              </ul>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-primary mb-4">Características del producto</h3>
+              <ul className="list-disc pl-6 space-y-2 text-gray-800">
+                <li>Área de cobertura: República Argentina</li>
+                <li>Servicio brindado las 24 horas los 365 días del año</li>
+                <li>Cantidad de servicios: 4 eventos anuales</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Prestaciones</h2>
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <ul className="list-disc pl-6 space-y-2 text-gray-800">
+              <li>Plomería: Ante roturas de cañerías, llaves u otras instalaciones de agua</li>
+              <li>Electricidad: Por falta de energía eléctrica en la vivienda asegurada o en alguna de sus dependencias</li>
+              <li>Gas: Para la reparación de rotura de cañerías, llaves u otras instalaciones fijas de gas a la vista de la vivienda asegurada</li>
+              <li>Cerrajería: Se cubre en caso de robo o extravío de las llaves, o imposibilidad de apertura de alguna de las puertas de ingreso y/o egreso de la vivienda</li>
+              <li>Cerrajería: En caso de roturas de cristales y/o vidrios verticales de puertas y ventanas que formen parte del cerramiento exterior de la vivienda</li>
+            </ul>
+          </div>
         </div>
 
         <Asesoramiento />

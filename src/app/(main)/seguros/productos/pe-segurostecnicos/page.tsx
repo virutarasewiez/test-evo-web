@@ -11,46 +11,41 @@ export default function SegurosTecnicos() {
 
         <div className="prose max-w-none">
           <p className="text-lg text-gray-600 mb-6">
-            Los seguros técnicos son soluciones especializadas que protegen equipos, maquinarias y bienes tecnológicos. Diseñados para brindar cobertura ante fallas técnicas, daños accidentales y otros riesgos específicos que pueden afectar tu operación.
+            Es un grupo de productos creados con la intención de resguardar las actividades comerciales y/o industriales de construcción, montaje, rotura de maquinarias, equipos electrónicos y equipos de contratistas, entre otras, garantizando la integridad de tu empresa, ante posibles eventualidades que puedan ocurrir durante las operaciones de trabajo.
           </p>
 
-          <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Beneficios</h2>
-          <ul className="list-disc pl-6 mb-8 space-y-2 text-gray-800">
-            <li>Protección especializada para equipos técnicos</li>
-            <li>Cobertura ante fallas mecánicas</li>
-            <li>Asistencia técnica especializada</li>
-            <li>Respuesta rápida ante siniestros</li>
-            <li>Primas adaptadas a tu equipo</li>
-            <li>Servicio de atención personalizado</li>
-            <li>Gestión eficiente de siniestros</li>
-          </ul>
-
-          <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Cobertura</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Coberturas</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-primary mb-4">Coberturas Principales</h3>
-              <ul className="list-disc pl-6 space-y-2 text-gray-800">
-                <li>Fallas mecánicas</li>
-                <li>Daños eléctricos</li>
-                <li>Accidentes operativos</li>
-                <li>Responsabilidad civil</li>
-              </ul>
+              <h3 className="text-xl font-semibold text-primary mb-4">Todo Riesgo Construcción</h3>
+              <p className="text-gray-600">
+                Cobertura integral para obras de construcción en general.
+              </p>
             </div>
-            
+
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-primary mb-4">Servicios Adicionales</h3>
-              <ul className="list-disc pl-6 space-y-2 text-gray-800">
-                <li>Asistencia técnica 24/7</li>
-                <li>Mantenimiento preventivo</li>
-                <li>Repuestos originales</li>
-                <li>Equipo de reemplazo</li>
-              </ul>
+              <h3 className="text-xl font-semibold text-primary mb-4">Todo Riesgo Montaje</h3>
+              <p className="text-gray-600">
+                Cobertura de todo riesgo para obras de montaje de máquinas, acueductos, gasoductos, calderas, turbinas, ascensores, motores, grúas, etc.
+              </p>
             </div>
           </div>
 
-          <p className="text-lg text-gray-600 mb-6">
-            Nuestros seguros técnicos están diseñados para brindarte la máxima protección y tranquilidad en la operación de tus equipos, con coberturas específicas para cada tipo de tecnología y un servicio de atención personalizado que entiende las necesidades únicas de tu negocio.
-          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-primary mb-4">Equipos de Contratistas</h3>
+              <p className="text-gray-600">
+                Un seguro técnico pensado para resguardar máquinas viales y equipos destinados a la construcción y otras actividades durante el momento en que se encuentran en funcionamiento.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-primary mb-4">Equipos Electrónicos</h3>
+              <p className="text-gray-600">
+                Una cobertura Todo Riesgo para equipos de computación, equipos destinados a la industria, ciencia y medicina, máquinas de oficina y telecomunicaciones.
+              </p>
+            </div>
+          </div>
         </div>
 
         <Asesoramiento />

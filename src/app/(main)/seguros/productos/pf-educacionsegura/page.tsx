@@ -11,46 +11,68 @@ export default function EducacionSegura() {
 
         <div className="prose max-w-none">
           <p className="text-lg text-gray-600 mb-6">
-            El seguro de educación es una protección esencial para el futuro de tus hijos, brindando cobertura para garantizar su educación incluso ante imprevistos. Diseñado para asegurar que tus hijos puedan continuar con sus estudios sin interrupciones.
+            En Evolución Seguros, sabemos cuán importante son los estudios de tus hijos, por ello queremos asegurarnos que puedan culminarlos brindándoles protección en caso de que vos no puedas estar.
           </p>
 
-          <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Beneficios</h2>
-          <ul className="list-disc pl-6 mb-8 space-y-2 text-gray-800">
-            <li>Garantía de educación para tus hijos</li>
-            <li>Cobertura ante fallecimiento o invalidez</li>
-            <li>Flexibilidad en los planes de estudio</li>
-            <li>Primas adaptadas a tus necesidades</li>
-            <li>Servicio de atención personalizado</li>
-            <li>Asesoramiento educativo</li>
-            <li>Gestión eficiente de siniestros</li>
-          </ul>
+          <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Objetivos</h2>
+          <div className="bg-white p-6 rounded-lg shadow-md mb-8">
+            <ul className="list-disc pl-6 space-y-2 text-gray-800">
+              <li>Asegurar a los estudiantes los medios económicos a fin de que logren la finalización de sus estudios (eje inicial, eje primario, eje secundario) en la Institución contratante.</li>
+              <li>Trasladar el riesgo a la Compañía Aseguradora, a través del reemplazo de fondos de previsión escolar, o sus equivalentes.</li>
+              <li>En caso de inexistencia de estos fondos, crear una ayuda frente a la incertidumbre en que quedan los alumnos, y un equilibrio para la matrícula de la Institución.</li>
+            </ul>
+          </div>
 
-          <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Cobertura</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Beneficios</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-primary mb-4">Coberturas Principales</h3>
+              <h3 className="text-xl font-semibold text-primary mb-4">Para las familias</h3>
               <ul className="list-disc pl-6 space-y-2 text-gray-800">
-                <li>Fallecimiento del asegurado</li>
-                <li>Invalidez total y permanente</li>
-                <li>Enfermedades graves</li>
-                <li>Gastos educativos</li>
+                <li>Premio accesible, por ser una póliza de Vida Colectivo.</li>
+                <li>No acceder a costos financieros, en caso del fallecimiento del sostén económico familiar, a fin de mantener el estándar de vida del grupo familiar.</li>
+                <li>Seguridad de la finalización de los estudios en la Institución a la que pertenece.</li>
               </ul>
             </div>
-            
+
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-primary mb-4">Servicios Adicionales</h3>
+              <h3 className="text-xl font-semibold text-primary mb-4">Para la institución</h3>
               <ul className="list-disc pl-6 space-y-2 text-gray-800">
-                <li>Asesoramiento educativo</li>
-                <li>Orientación vocacional</li>
-                <li>Apoyo psicológico</li>
-                <li>Becas y descuentos</li>
+                <li>Protección integral de los alumnos al tener resueltos los conflictos humanos en momento de problemas emocionales.</li>
+                <li>Imagen diferenciada dentro del sistema educativo, brindando un servicio adicional a los alumnos.</li>
+                <li>El seguro constituye un medio de custodia a largo plazo, de los alumnos en la institución y permite fortalecer la imagen de interés integral a sus necesidades y las de su núcleo familiar.</li>
               </ul>
             </div>
           </div>
 
-          <p className="text-lg text-gray-600 mb-6">
-            Nuestro seguro de educación está diseñado para brindarte la máxima tranquilidad sobre el futuro educativo de tus hijos, con coberturas adaptadas a tus necesidades específicas y un servicio de atención personalizado que está disponible cuando lo necesites.
-          </p>
+          <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Tipo de seguro</h2>
+          <div className="bg-white p-6 rounded-lg shadow-md mb-8">
+            <ul className="list-disc pl-6 space-y-2 text-gray-800">
+              <li>VIDA RIESGOS CUBIERTOS: Muerte por enfermedad o accidente. La cobertura rige las 24 hs, dentro y fuera del país durante todo el año.</li>
+              <li>TOMADOR: Institución educativa o asociación de padres de alumnos (APA), según el caso, como persona jurídica que suscribe el contrato.</li>
+              <li>ASEGURADOS: El asegurado serán los padres o tutores que fueron informados oportunamente a la compañía según listado en poder de la misma.</li>
+              <li>BENEFICIARIOS: En todos los casos el beneficiario del seguro será el colegio, quien recibirá la indemnización.</li>
+              <li>TIPO DE POLIZA: Póliza de grupo anual renovable en forma automática.</li>
+            </ul>
+          </div>
+
+          <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Requisitos y datos</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-primary mb-4">Requisitos de asegurabilidad</h3>
+              <ul className="list-disc pl-6 space-y-2 text-gray-800">
+                <li>Será necesario contar con una adhesión del 80% de los padres o tutores actualmente asegurados (traspaso de póliza)</li>
+                <li>Para futuros ingresos: se establece como periodo de preexistencia los primeros 12 meses de vigencia de cada certificado individual.</li>
+              </ul>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-primary mb-4">Datos para cotizar</h3>
+              <ul className="list-disc pl-6 space-y-2 text-gray-800">
+                <li>Nomina (en Excel) de padres (responsable económico) con fechas de nacimiento, indicando también cantidad de hijos en la institución y grado/año que están cursando.</li>
+                <li>Cuadro con valor de cuota mensual por grado/año. Indicando cantidad de cuotas que se abonan por año lectivo y costo de matrícula.</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
         <Asesoramiento />

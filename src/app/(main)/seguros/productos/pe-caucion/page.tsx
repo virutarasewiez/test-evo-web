@@ -11,46 +11,75 @@ export default function Caucion() {
 
         <div className="prose max-w-none">
           <p className="text-lg text-gray-600 mb-6">
-            El seguro de caución es una garantía financiera que respalda el cumplimiento de obligaciones contractuales. Es una herramienta esencial para empresas y profesionales que necesitan garantizar su compromiso en diversos tipos de contratos y operaciones comerciales.
+            El seguro de Caución es una de las herramientas más eficaces para todas aquellas personas físicas o jurídicas que desarrollan actividades comerciales o profesionales y que por determinadas exigencias legales, reglamentarias o contractuales, necesitan garantizar el cumplimiento de sus obligaciones contraídas frente a terceros.
           </p>
 
-          <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Beneficios</h2>
-          <ul className="list-disc pl-6 mb-8 space-y-2 text-gray-800">
-            <li>Garantía financiera inmediata</li>
-            <li>Proceso de emisión ágil</li>
-            <li>Costos competitivos</li>
-            <li>Flexibilidad en los montos</li>
-            <li>Asesoramiento especializado</li>
-            <li>Documentación simplificada</li>
-            <li>Vigencia adaptable a tus necesidades</li>
-          </ul>
+          <p className="text-lg text-gray-600 mb-6">
+            Ponemos a tu disposición nuestro respaldo y experiencia, garantizándote un trámite ágil y sencillo, que te permitirá contar con una gama de coberturas acorde a las necesidades de gestión de tus negocios con el respaldo de la compañía pionera en este rubro.
+          </p>
 
-          <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Cobertura</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Coberturas</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-primary mb-4">Tipos de Caución</h3>
+              <h3 className="text-xl font-semibold text-primary mb-4">Garantías Contractuales</h3>
               <ul className="list-disc pl-6 space-y-2 text-gray-800">
-                <li>Caución de alquiler</li>
-                <li>Caución de licitación</li>
-                <li>Caución de fiel cumplimiento</li>
-                <li>Caución de suministro</li>
+                <li>Garantías de Obras Públicas y Privadas</li>
+                <li>Mantenimiento de oferta</li>
+                <li>Ejecución de contrato</li>
+                <li>Fondo de reparo</li>
+                <li>Anticipo</li>
               </ul>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-primary mb-4">Características</h3>
+              <h3 className="text-xl font-semibold text-primary mb-4">Garantías de Suministros y Servicios</h3>
               <ul className="list-disc pl-6 space-y-2 text-gray-800">
-                <li>Emisión inmediata</li>
-                <li>Sin depósito de fondos</li>
-                <li>Vigencia flexible</li>
-                <li>Renovación automática</li>
+                <li>Garantía de oferta</li>
+                <li>Garantía de Adjudicación</li>
+                <li>Sustitución Fondo de reparo</li>
+                <li>Garantía de Anticipo</li>
+                <li>Tenencia de bienes para su uso / reparación / manutención o reacondicionamiento</li>
+                <li>Tenencia de material para fabricación o montaje</li>
+                <li>Garantía de certificación de avance de fabricación</li>
+              </ul>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-primary mb-4">Garantías de Alquileres</h3>
+              <ul className="list-disc pl-6 space-y-2 text-gray-800">
+                <li>Comerciales y domiciliarios</li>
+              </ul>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-primary mb-4">Garantías Aduaneras</h3>
+              <ul className="list-disc pl-6 space-y-2 text-gray-800">
+                <li>Tránsito Terrestre</li>
+                <li>IMPO/EXPO</li>
+                <li>Falta de documentación</li>
+                <li>Otros</li>
+              </ul>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-primary mb-4">Garantías de actividad o profesión</h3>
+              <ul className="list-disc pl-6 space-y-2 text-gray-800">
+                <li>Directores IGJ</li>
+                <li>Agencias de Turismo</li>
+                <li>Agencias de Loterías</li>
+                <li>Administradores de sociedades</li>
+                <li>Otros</li>
+              </ul>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-primary mb-4">Garantías Judiciales</h3>
+              <ul className="list-disc pl-6 space-y-2 text-gray-800">
+                <li>Sustitución de medidas cautelares</li>
+                <li>Contracautela</li>
               </ul>
             </div>
           </div>
-
-          <p className="text-lg text-gray-600 mb-6">
-            Nuestro seguro de caución está diseñado para brindarte la máxima flexibilidad y seguridad en tus operaciones comerciales, con un servicio de atención personalizado y soluciones adaptadas a tus necesidades específicas.
-          </p>
         </div>
 
         <Asesoramiento />
