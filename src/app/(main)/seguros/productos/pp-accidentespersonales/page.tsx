@@ -11,46 +11,30 @@ export default function AccidentesPersonales() {
 
         <div className="prose max-w-none">
           <p className="text-lg text-gray-600 mb-6">
-            El seguro de accidentes personales es una protección esencial que te brinda cobertura ante imprevistos que puedan afectar tu salud o integridad física. Diseñado para brindarte tranquilidad y seguridad en tu día a día.
+            Es un producto diseñado para protegerte ante cualquier situación inesperada que pueda afectar tu integridad física producto de un accidente ajeno a tu voluntad, tanto en el ejercicio de tu profesión como en tu vida privada.
           </p>
 
-          <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Beneficios</h2>
-          <ul className="list-disc pl-6 mb-8 space-y-2 text-gray-800">
-            <li>Cobertura las 24 horas, los 365 días del año</li>
-            <li>Protección en todo el territorio nacional</li>
-            <li>Asistencia médica inmediata</li>
-            <li>Indemnización por fallecimiento</li>
-            <li>Invalidez permanente</li>
-            <li>Gastos de sepelio</li>
-            <li>Asistencia al hogar</li>
-          </ul>
-
-          <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Cobertura</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-primary mb-4">Coberturas Principales</h3>
+              <h3 className="text-xl font-semibold text-primary mb-4">Beneficios del producto</h3>
               <ul className="list-disc pl-6 space-y-2 text-gray-800">
-                <li>Muerte accidental</li>
-                <li>Invalidez permanente</li>
-                <li>Gastos médicos</li>
-                <li>Asistencia al hogar</li>
+                <li>Atención telefónica gratuita las 24 hs.</li>
+                <li>Renovación automática de forma anual.</li>
+                <li>No requiere examen médico, ni declaración de salud.</li>
+                <li>Planes a medida para cada actividad.</li>
+                <li>Libre elección de sumas aseguradas.</li>
+                <li>Libre designación de beneficiarios.</li>
+                <li>Tarifas al alcance de los contratantes.</li>
               </ul>
             </div>
-            
+
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-primary mb-4">Servicios Adicionales</h3>
-              <ul className="list-disc pl-6 space-y-2 text-gray-800">
-                <li>Asistencia médica telefónica</li>
-                <li>Traslado en ambulancia</li>
-                <li>Internación domiciliaria</li>
-                <li>Servicio de enfermería</li>
-              </ul>
+              <h3 className="text-xl font-semibold text-primary mb-4">Alcance</h3>
+              <p className="text-gray-600">
+                La póliza de Accidentes Personales brinda protección al asegurado en caso de muerte o incapacidades permanentes sean totales o parciales, sufridas en ocasión de un accidente.
+              </p>
             </div>
           </div>
-
-          <p className="text-lg text-gray-600 mb-6">
-            Nuestro seguro de accidentes personales está diseñado para brindarte la máxima protección y tranquilidad, con un servicio de atención personalizado y coberturas adaptadas a tus necesidades.
-          </p>
         </div>
 
         <Asesoramiento />

@@ -11,46 +11,81 @@ export default function VidaColectivo() {
 
         <div className="prose max-w-none">
           <p className="text-lg text-gray-600 mb-6">
-            El seguro de vida colectivo es una solución diseñada para empresas y grupos, brindando protección financiera a los beneficiarios en caso de fallecimiento del asegurado. Una herramienta esencial para la seguridad financiera de las familias.
+            Al cotizar el seguro de vida, contratas la seguridad de tener a resguardo a tu familia en caso de que fallezcas. Los beneficiarios de tu seguro serán quienes cobren la póliza en caso de fallecimiento, pudiendo así contar con un respaldo ante situaciones inesperadas.
           </p>
 
-          <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Beneficios</h2>
-          <ul className="list-disc pl-6 mb-8 space-y-2 text-gray-800">
-            <li>Primas adaptadas al tamaño del grupo</li>
-            <li>Proceso de contratación simplificado</li>
-            <li>Flexibilidad en las coberturas</li>
-            <li>Posibilidad de incluir coberturas adicionales</li>
-            <li>Servicio de atención personalizado</li>
-            <li>Asesoramiento especializado</li>
-            <li>Gestión eficiente de siniestros</li>
-          </ul>
-
-          <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Cobertura</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-primary mb-4">Coberturas Básicas</h3>
+              <h3 className="text-xl font-semibold text-primary mb-4">Beneficios del producto</h3>
               <ul className="list-disc pl-6 space-y-2 text-gray-800">
-                <li>Muerte por cualquier causa</li>
-                <li>Muerte accidental</li>
-                <li>Invalidez total y permanente</li>
-                <li>Gastos de sepelio</li>
+                <li>Suscripción por grupos para empleados/asociados de Gremios, Mutuales, Municipios, Cooperativas, Asociaciones y otras entidades.</li>
+                <li>Flexibilidad de rangos de cobertura de acuerdo a las necesidades del asegurado.</li>
+                <li>Atención telefónica gratuita las 24 hrs.</li>
+                <li>Beneficiarios a libre elección del contratante de la cobertura.</li>
+                <li>Edad de permanencia en la póliza hasta 80 años.</li>
+                <li>Tarifas al alcance de los contratantes.</li>
               </ul>
             </div>
-            
+
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-primary mb-4">Coberturas Opcionales</h3>
+              <h3 className="text-xl font-semibold text-primary mb-4">Ventajas del seguro de vida colectivo</h3>
               <ul className="list-disc pl-6 space-y-2 text-gray-800">
-                <li>Enfermedades graves</li>
-                <li>Asistencia al viajero</li>
-                <li>Asistencia médica</li>
-                <li>Renta diaria por internación</li>
+                <li>No requiere exámenes ni chequeos médicos.</li>
+                <li>Amplio rango de edades para la contratación del seguro.</li>
+                <li>Tarifas más bajas a las del seguro de vida individual.</li>
               </ul>
             </div>
           </div>
 
-          <p className="text-lg text-gray-600 mb-6">
-            Nuestro seguro de vida colectivo está diseñado para brindar la máxima protección a los grupos y empresas, con coberturas flexibles y un servicio de atención personalizado que se adapta a las necesidades específicas de cada organización.
-          </p>
+          <div className="bg-white p-6 rounded-lg shadow-md mb-8">
+            <p className="text-gray-600 mb-4">
+              En Evolución Seguros conocemos la importancia de brindarte el acompañamiento ante una necesidad imprevista y sensible, que requiere ser atendida con rapidez, respeto y solemnidad.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-primary mb-4">Asistencia Médica y Beneficios en Salud</h3>
+              <ul className="list-disc pl-6 space-y-2 text-gray-800">
+                <li>Traslado en ambulancia en caso de accidente</li>
+                <li>Segunda opinión médica</li>
+                <li>Médico a domicilio</li>
+                <li>Enfermera a domicilio</li>
+                <li>Cuidados prolongados y acompañamiento nocturno</li>
+                <li>Envío de medicamentos y exámenes de laboratorio a domicilio</li>
+                <li>Teleconsultas médicas las 24 hs.</li>
+                <li>Recordatorio de citas médicas e ingesta de medicamentos</li>
+                <li>Referencias médicas de especialistas e instituciones médicas en Argentina</li>
+                <li>Empleada doméstica en caso de internación por accidente</li>
+                <li>Reintegro del 40% por compra en farmacias en horario nocturno</li>
+                <li>Descuento en testeo PCR</li>
+                <li>Gestión de turnos para testeo PCR en Argentina</li>
+              </ul>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-primary mb-4">Asistencia en vía pública</h3>
+              <ul className="list-disc pl-6 space-y-2 text-gray-800">
+                <li>Traslado del beneficiario en caso de accidente o robo</li>
+                <li>Traslado médico en caso de lesiones</li>
+                <li>Primera consulta médica en caso de lesiones</li>
+                <li>Traslado de restos en caso de fallecimiento en viaje nacional</li>
+                <li>Reintegro de medicamentos en caso de accidente</li>
+                <li>Teleconsultas médicas las 24 hs.</li>
+                <li>Cerrajero en caso de robo de llaves del domicilio</li>
+                <li>Traslado del vehículo en caso de robo de llaves</li>
+                <li>Transmisión de mensajes urgentes</li>
+                <li>Conexión de servicio de emergencia (policía, bomberos, etc)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold text-primary mb-4">Aclaración</h3>
+            <p className="text-gray-600">
+              Tanto la asistencia médica como asistencia en vía pública son contrataciones adicionales al seguro de vida colectivo.
+            </p>
+          </div>
         </div>
 
         <Asesoramiento />

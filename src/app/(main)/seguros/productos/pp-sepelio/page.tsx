@@ -11,46 +11,44 @@ export default function Sepelio() {
 
         <div className="prose max-w-none">
           <p className="text-lg text-gray-600 mb-6">
-            El seguro de sepelio es una protección que brinda asistencia integral ante el fallecimiento de un ser querido. Diseñado para aliviar la carga económica y emocional en momentos difíciles, garantizando un servicio digno y profesional.
+            Es un producto diseñado para mantener la calma de los seres queridos ante el fallecimiento del titular (empleados/asociados), permitiéndole coordinar telefónicamente los servicios fúnebres necesarios.
           </p>
 
-          <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Beneficios</h2>
-          <ul className="list-disc pl-6 mb-8 space-y-2 text-gray-800">
-            <li>Cobertura inmediata desde el primer día</li>
-            <li>Servicio de sepelio las 24 horas</li>
-            <li>Asistencia telefónica permanente</li>
-            <li>Traslado de restos</li>
-            <li>Capilla ardiente</li>
-            <li>Servicio de cremación</li>
-            <li>Asistencia psicológica</li>
-          </ul>
-
-          <h2 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Cobertura</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-primary mb-4">Servicios Incluidos</h3>
+              <h3 className="text-xl font-semibold text-primary mb-4">Beneficios del producto</h3>
               <ul className="list-disc pl-6 space-y-2 text-gray-800">
-                <li>Traslado de restos</li>
-                <li>Capilla ardiente</li>
-                <li>Servicio de cremación</li>
-                <li>Urna o ataúd</li>
+                <li>Suscripción por grupos para empleados/asociados de Gremios, Mutuales, Municipios, Cooperativas, Asociaciones y otras entidades</li>
+                <li>Atención telefónica gratuita las 24 hs. a través de nuestra línea 0800-345-7373.</li>
+                <li>Servicio de Sepelio a través de cocherías distribuidas en todo el país.</li>
+                <li>Incorporación de todo el grupo familiar a los beneficios de la póliza.</li>
+                <li>Edad de permanencia en la póliza hasta 80 años.</li>
+                <li>Traslado hasta 30 kilómetros.</li>
               </ul>
             </div>
-            
+
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-primary mb-4">Servicios Adicionales</h3>
+              <h3 className="text-xl font-semibold text-primary mb-4">Modalidad de Sepelio</h3>
               <ul className="list-disc pl-6 space-y-2 text-gray-800">
-                <li>Asistencia psicológica</li>
-                <li>Traslado de familiares</li>
-                <li>Servicio de catering</li>
-                <li>Flores y ornamentación</li>
+                <li>Servicio Prestacional con opción de reintegro.</li>
               </ul>
             </div>
           </div>
 
-          <p className="text-lg text-gray-600 mb-6">
-            Nuestro seguro de sepelio está diseñado para brindar un servicio completo y profesional, con atención personalizada y todas las coberturas necesarias para garantizar un servicio digno.
-          </p>
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold text-primary mb-4">Servicio de Cochería incluye</h3>
+            <p className="text-gray-600 mb-4">
+              Servicio para mayores, desde los 8 años cumplidos en adelante. Tierra, Nicho, Panteón o Bóveda. El servicio estará compuesto por:
+            </p>
+            <ul className="list-disc pl-6 space-y-2 text-gray-800">
+              <li>Ataúd Bóveda Especial, uno, dos o tres paneles, ocho manijas, color natural.</li>
+              <li>Caoba o nogal, con blondas volcables, mortaja, herrajes imitación plata vieja.</li>
+              <li>Capilla Ardiente (o Capilla Velatoria Especial).</li>
+              <li>Con crucifijos o Cristo Eucarístico o Estrella de David, velas eléctricas o a gas.</li>
+              <li>Un coche porta coronas, una Carroza Fúnebre motorizada, dos autos de acompañamiento.</li>
+              <li>Licencia del Registro Civil para inhumación y tramitación Municipal.</li>
+            </ul>
+          </div>
         </div>
 
         <Asesoramiento />
