@@ -13,6 +13,7 @@ interface MainLayoutProps {
 export default function MainLayout({ children }: MainLayoutProps) {
   return (
     <>
+      {/* Microsoft Clarity */}
       <Script id="clarity-script-main" strategy="afterInteractive">
         {`
           (function(c,l,a,r,i,t,y){
@@ -22,6 +23,18 @@ export default function MainLayout({ children }: MainLayoutProps) {
           })(window, document, "clarity", "script", "r439g12v77");
         `}
       </Script>
+
+      {/* Google tag (gtag.js) */}
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-SLJ2WW1CNG" />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-SLJ2WW1CNG');
+        `}
+      </Script>
+      
       <Header />
       <main>{children}</main>
       <Footer />
