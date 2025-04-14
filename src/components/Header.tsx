@@ -30,10 +30,10 @@ export default function Header() {
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href="/" className="flex items-center">
+        <Link href="/" className="flex items-center hover:scale-105 transition duration-300">
           <Image
             src="/assets/images/logo.png"
-            alt="Company Logo"
+            alt="Evolución Seguros"
             width={150}
             height={40}
             className="object-contain"
