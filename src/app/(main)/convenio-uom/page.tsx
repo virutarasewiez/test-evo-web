@@ -23,9 +23,14 @@ export default function ConvenioUOM() {
 </div>
 
 
-        <div className="bg-white rounded-lg shadow-lg p-6 mb-8">
+        <a 
+          href="https://appseguros.evolucionseguros.com/login" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="block bg-[#b42830] hover:bg-[#9a2228] text-white rounded-lg shadow-lg p-6 mb-8 transition-all duration-300"
+        >
           <div className="flex flex-col items-center justify-center gap-6">
-            <div className="flex items-center gap-3 text-primary">
+            <div className="flex items-center gap-3 text-white">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
               </svg>
@@ -33,22 +38,17 @@ export default function ConvenioUOM() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
               </svg>
             </div>
-            <p className="text-lg text-center text-gray-700 mb-4">
-              <strong>Registrate en nuestra app y completa los datos de tu seguro colectivo de vida. Completa los datos de tus beneficiarios.</strong>
+            <p className="text-lg text-center text-white mb-4">
+              <strong>Completá tus datos y los de tus beneficiarios en nuestra app. ¡Es fácil y rápido!</strong>
             </p>
-            <a 
-              href="https://appseguros.evolucionseguros.com/login" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="bg-primary hover:bg-primary/90 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 flex items-center gap-2"
-            >
+            <div className="flex items-center gap-2 text-white">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zM12 2.25V4.5m5.834.166l-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243l-1.59-1.59" />
               </svg>
-              Completa tus datos aqui
-            </a>
+              ¡Hacé clic aquí!
+            </div>
           </div>
-        </div>
+        </a>
 
         <div className="grid md:grid-cols-2 gap-8 mb-8">
           <div className="bg-white rounded-lg shadow-lg p-6">
