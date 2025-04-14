@@ -13,6 +13,11 @@ interface MainLayoutProps {
 export default function MainLayout({ children }: MainLayoutProps) {
   return (
     <>
+
+<link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        />
       {/* Microsoft Clarity */}
       <Script id="clarity-script-main" strategy="afterInteractive">
         {`

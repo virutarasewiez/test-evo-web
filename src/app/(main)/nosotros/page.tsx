@@ -1,4 +1,5 @@
 import React from 'react';
+import Carrusel from '@/components/carrusel'; 
 
 const valores = [
   {
@@ -29,13 +30,13 @@ const valores = [
     id: 5,
     titulo: 'Ética',
     descripcion: 'NUESTROS VALORES SE COMBINAN PARA OFRECER A NUESTROS CLIENTES LOS MAS ALTOS ESTÁNDARES DE ÉTICA Y RESPONSABILIDAD SOCIAL EMPRESARIAL.',
-    icon: 'bi-shield-check'
+    icon: 'bi-book'
   },
   {
     id: 6,
     titulo: 'Honestidad',
     descripcion: 'LA TRANSPARENCIA EN NUESTROS PROCESOS HABLAN DE LA INTEGRIDAD DE LOS SERVICIOS PRESTADOS.',
-    icon: 'bi-hand-thumbs-up'
+    icon: 'bi-people'
   },
   {
     id: 7,
@@ -47,28 +48,15 @@ const valores = [
     id: 8,
     titulo: 'Confianza',
     descripcion: 'BRINDANDO CONFIANZA ES QUE NUESTROS CLIENTES LOGRAN ASEGURAR A SU FAMILIA, BIENES Y PROYECTOS.',
-    icon: 'bi-handshake'
+    icon: 'bi-shield-check'
   }
 ];
 
 export default function Page() {
   return (
     <div className="bg-gradient-to-b from-gray-50 to-white">
-      {/* Hero Section */}
-      <section className="relative py-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-primary/5"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="text-center">
-            <h1 className="text-5xl font-extrabold text-gray-900 mb-8 tracking-tight">
-              Evolución Seguros
-            </h1>
-            <p className="text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Una empresa que reúne la energía y la experiencia de los grandes, dispuestos siempre a respaldar tu futuro.
-            </p>
-          </div>
-        </div>
-      </section>
-
+      <Carrusel />
+      
       {/* Valores Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
