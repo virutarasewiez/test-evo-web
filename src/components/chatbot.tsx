@@ -13,12 +13,7 @@ declare global {
   }
 }
 
-const Chatbot = () => {
-  // Estado para controlar si el chatbot está activo o inactivo
-  // Para activar/desactivar el chatbot, puedes usar setIsActive(true) o setIsActive(false)
-
-  const [isActive, setIsActive] = useState(true);
-
+const Chatbot = ({ isActive = true }: { isActive?: boolean }) => {
   useEffect(() => {
     // Solo cargar el script si el chatbot está activo
     if (isActive) {
@@ -46,8 +41,6 @@ const Chatbot = () => {
       };
     }
   }, [isActive]); // El efecto se ejecutará cuando cambie el estado de isActive
-
-
 
   return null; // El componente no renderiza nada visible
 };
