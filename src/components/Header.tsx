@@ -52,7 +52,7 @@ export default function Header() {
           <div className="relative" ref={menuRef}>
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="focus:outline-none"
+              className="focus:outline-none cursor-pointer hover:scale-110 transition duration-300"
               aria-expanded={isMenuOpen}
               aria-label="Abrir menú"
             >
