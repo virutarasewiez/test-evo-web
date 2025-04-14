@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
 // Declaración de tipos para Zoho SalesIQ
 declare global {
