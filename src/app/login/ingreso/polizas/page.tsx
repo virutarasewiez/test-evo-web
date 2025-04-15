@@ -494,7 +494,7 @@ export default function PolizasPage() {
                             Vigente
                           </span>
                         ) : (
-                          <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-200 text-red-600">
+                          <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-200 text-[#b42830]">
                             No Vigente
                           </span>
                         )}
